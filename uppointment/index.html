@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uppointment</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/style/normalize.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
@@ -12,16 +14,16 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__content">
-                <div class="menu">
-                    <div class="click-menu">
-                    </div>
-                </div>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
                 <nav class="header__navigation">
                     <ul class="navigation__list">
                         <li class="list__item"><a href="#" class="list__link">about</a></li>
                         <li class="list__item"><a href="#" class="list__link">features</a></li>
                         <li class="list__item"><a href="#" class="list__link">pricing</a></li>
-                        <li class="list__item"><a href="#" class="list__link">products</a>
+                        <li class="list__item"><a href="#" class="list__link">products <img src="assets/img/arrow-down.svg"></a>
                             <div class="submenu">
                                 <a href="#">User-friendly booking software</a>
                                 <a href="#">Smart invoicing</a>
@@ -32,7 +34,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__button-sing-in">Sing In</button>
+                <button class="header__button-sing-in">Sing In <i class="fas fa-arrow-right sing-in-icon"></i></button>
             </div>
         </div>
     </header>
@@ -54,19 +56,26 @@
                 </div>
             </div>
         </section>
+
+        <!-- start section uppointment -->
+
         <section class="uppointment">
-            
                 <div class="uppointment-content-img">
                     <img src="assets/img/uppontment.png" alt="uppointment" class="uppointment-img">
-                    <img src="assets/img/install.svg" alt="install" class="uppointment-install">
+                    <!-- <img src="assets/img/install.svg" alt="install" class="uppointment-install"> -->
+                    <a href="#" class="install-link wow" ><img src="assets/img/install1.svg" alt="install"></a>
                 </div>
-                    
-                    <div class="uppointment-content__section">
-                        <h4 class="uppointmnt__title title">Install <span>Uppointment</span> chat today and instantly increase your customer satisfaction (CSAT) score.</h4>
-                        <p class="uppointmnt__paragraph">Online users prefer chat support to email or call.</p>
-                    </div>
-                
+
+                <div class="uppointment-content__section">
+                    <h4 class="uppointmnt__title title">Install <span>Uppointment</span> chat today and instantly increase your customer satisfaction (CSAT) score.</h4>
+                    <p class="uppointmnt__paragraph">Online users prefer chat support to email or call.</p>
+                </div>
         </section>
+
+        <!-- end section uppointment -->
+
+        <!-- start section support-for-business -->
+
         <section class="support-for-business">
             <div class="support-for-business__content">
                 <div class="support-for-business-content-section">
@@ -83,15 +92,23 @@
                             Exporters</li>
                     </ul>
                 </div>
-
-                <img src="assets/img/support-fot-business-bg.svg" alt="business">
+                <div class="support-for-business__img">
+                    <img src="assets/img/support-for-business.png" alt="business">
+                    <span class="first-message wow animate__animated animate__fadeIn" data-wow-delay="0.5s">Hello</span>
+                    <span class="second-message wow animate__animated animate__fadeIn" data-wow-delay="0.7s">Good afternoon <br>
+                        How can I help you?</span>
+                </div>
             </div>
         </section>
+
+        <!-- end section start-for-business -->
+
+        <!-- start section help -->
         <section class="help">
             <div class="help__content">
                 <div class="help-content__img">
                     <img src="assets/img/help-bg.svg" alt="help" class="help-img">
-                    <img src="assets/img/Respect.svg" alt="respect" class="help-respect">
+                    <span class="help__respect wow"><img src="assets/img/icon-respect.svg" alt="respect"></span>
                 </div>
                 <div class="help-content__section">
                     <h4 class="help__title title"><span>Help</span> customers quickly, they will appreciate it.</h4>
@@ -99,36 +116,49 @@
                 </div>
             </div>
         </section>
+        <!-- end section help -->
+
+        <!-- start section information -->
         <section class="information">
             <div class="wrapper">
                 <div class="information__content">
-                    <div class="information__block">
+                    <div class="information__block wow" >
                         <h4 class="information__title title"><span>Smart</span> auto responder</h4>
                         <p class="information__paragraph">Instant answers in real time.Capturing the leads even outside your business hours. Automatically respond to commonly asked questions like locations, prices or schedule.</p>
                     </div>
-                    <div class="information__block">
+                    <div class="information__block wow">
                         <h4 class="information__title title"><span>Live</span> chat on the go.</h4>
                         <p class="information__paragraph">When FAQs and bot chat didn’t work live customer support can help. You don’t have to wait all day in front of your computer waiting for a customer reply. Keep the lead hot and keep the conversation going even after you or your customers walk away from the computer.</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end section information -->
+        
+        <!-- start section time -->
         <section class="time">
             <div class="time__content">
-                <div class="time-content__section">
+                <div class="time-content__section wow animate__animated animate__fadeInUp">
                     <h4 class="time__title title">Cut the wait <span>time</span> with chatbots.</h4>
                     <p class="time__paragraph">Lighten the load and make it easier for your team to manage questions. Chatbot can help you qualify leads, answer common questions, book appointments, and more. Uppointment’s live chat is fully integrated with an easy to use chatbot builder. No coding required, but if you need help we are right here.</p>
                 </div>
                 <div class="time-content__img">
                     <img src="assets/img/time-bg.png" alt="time-bg" class="time-img">
-                <img src="assets/img/time.svg" alt="time" class="time-tick">
+                    <span class="time__time-icon wow"><img src="assets/img/icon-time.svg" alt="time"></span>
                 </div>
             </div>
         </section>
+        <!-- end section time -->
+
+        <!-- start section seamlessly -->
         <section class="seamlessly">
             
                 <div class="seamlessly__content">
-                    <img src="assets/img/seam.png" alt="seamlessly-bg" class="seamlessly-img">
+                    <div class="seamlessly__content-img">
+                        <img src="assets/img/seamessly-bg.png" alt="seamlessly-bg" class="seamlessly-img">
+                        <img class="seamlessly-icon wow" src="assets/img/icon-message.svg" alt="message">
+                    </div>
+                    
                     <div class="seamlessly-content__section">
                         <h4 class="seamlessly__title title">Get paid. <span>Seamlessly</span>.</h4>
                         <p class="seamlessly__paragraph">For paid appointments and classes our scheduling software comes with an easy, multi payment options checkout. Accept credit cards using built in Uppointment Pay with industry-low rates, starting at 2.99% or in a matter of a few clicks add your own merchant account.</p>
@@ -137,12 +167,24 @@
                                 <img src="assets/img/left.svg" alt="left">
                             </div>
                             <div class="methods">
-                                <img src="assets/img/square.png" alt="square" class="method is-visible">
-                                <img src="assets/img/amazon.png" alt="amazon" class="method is-visiable">
-                                <img src="assets/img/auth-net.png" alt="authorize" class="method is-visiable">
-                                <img src="assets/img/paypal.png" alt="PayPal" class="method is-visiable">
-                                <img src="assets/img/pay.png" alt="pay" class="method is-visiable">
-                                <img src="assets/img/stripe.png" alt="stripe" class="method is-visiable">
+                                <div class="method wow animate__animated animate__fadeInLeft active" data-wow-delay="0.5s">
+                                    <img src="assets/img/square.png" alt="square">
+                                </div>
+                                <div class="method wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                                    <img src="assets/img/amazon.png" alt="amazon">
+                                </div>
+                                <div class="method wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                                    <img src="assets/img/auth-net.png" alt="authorize">
+                                </div>
+                                <div class="method wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                                    <img src="assets/img/paypal.png" alt="PayPal">
+                                </div>
+                                <div class="method wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                                    <img src="assets/img/pay.png" alt="pay">
+                                </div>
+                                <div class="method wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                                    <img src="assets/img/stripe.png" alt="stripe">
+                                </div>
                             </div>
                             <div class="arrow-right">
                                 <img src="assets/img/right.svg" alt="right">
@@ -150,39 +192,45 @@
                         </div>
                     </div>
                 </div>
-            
         </section>
+        <!-- end section seamlessly -->
+
+        <!-- start section chat-options -->
         <section class="chat-options">
             <h3 class="chat-option__title title">JUST SOME OF UPPOINTMENT <span>CHAT OPTIONS</span></h3>
             <div class="wrapper-options">
-                <div class="option">
+                <div class="option wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
                     <h5 class="option__title">Fully customizable chat</h5>
                     <p class="option-paragraph">Use our default web chat layout widget or customize it to your brand. Change button, greeting, required customer information and more.</p>
                 </div>
-                <div class="option">
+                <div class="option wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
                     <h5 class="option__title">Get paid in a flash</h5>
                     <p class="option-paragraph">Uppointment live chat helps to get payments faster. Just send a payment link via text. Ongoing deals, past-due invoices, active sales or down payments - customers simply click the link and get to a user-friendly checkout page.</p>
                 </div>
-                <div class="option">
+                <div class="option wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
                     <h5 class="option__title">Reporting and lead management</h5>
                     <p class="option-paragraph">Take a closer look at the detailed reports in your Uppointment dashboard and track details of chat leads then only send warm leads to your sales team or CRM.</p>
                 </div>
-                <div class="option">
+                <div class="option wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
                     <h5 class="option__title">Manage your team with ease</h5>
                     <p class="option-paragraph">Clearly see your customer service performance and keep track of sales. Our easy to read, extended reports allow you to quickly analyze all the data and stay in control.</p>
                 </div>
-                <div class="option">
+                <div class="option wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                     <h5 class="option__title">With us your data secure</h5>
                     <p class="option-paragraph">At Uppointment, we take your privacy and data security very seriously. We protect and secure your financial and personal data using proven technologies. From data encryption, access restrictions, and 2-step verification to GDPR compliance. We've got you covered.</p>
                 </div>
             </div>
         </section>
+        <!-- end section chat-options -->
+
+        <!-- start section experiences -->
         <section class="experiences">
             
                 <h2 class="experiences__title title">SEAMLESS CUSTOMER <span>EXPERIENCES</span> THAT DELIVER <span>REAL RESULTS</span> TO YOUR BUSINESS</h2>
                 <button class="experiences-button">register now</button>
             
         </section>
+        <!-- ens section experiences -->
     </main>
     <footer class="footer">
         <div class="wrapper">
@@ -204,5 +252,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/scripts/wow.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
