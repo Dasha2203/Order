@@ -73,13 +73,13 @@ section {
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 24px;
-  right: 0;
-  height: 2px;
-  background-color: #616161;
-  -webkit-transition: 0.5s ease-in-out;
+    display: block;
+    position: absolute;
+    width: 24px;
+    right: 0;
+    height: 2px;
+    background-color: #616161;
+    -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -88,12 +88,12 @@ section {
     width: 18px;
 }
 .menu__btn > span::before {
-  content: '';
-  top: -8px;
+    content: '';
+    top: -8px;
 }
 .menu__btn > span::after {
-  content: '';
-  top: 8px;
+    content: '';
+    top: 8px;
 }
 
 #menu__toggle, .menu__btn {
@@ -1205,6 +1205,10 @@ section {
         left:-6px;
     }
 
+    .live-web-chat__title {
+        text-align: center;
+    }
+
     .header{
         width: 100%;
     }
@@ -1263,9 +1267,10 @@ section {
         background: none;
         padding: 0;
         margin-bottom: 20px;
-        max-width: 300px;
+        max-width: 220px;
         width: 100%;
         font-size: 18px;
+        line-height: 1.5;
     }
 
     .header__navigation  ul li .submenu a:first-child:active,
@@ -1493,8 +1498,7 @@ section {
         width: 100%;
     }
     .time__time-icon {
-        top: 50%;
-        transform: translateY(-50%);
+        top: 31%;
         left: 3%;
         padding: 4px 26px;
     }
