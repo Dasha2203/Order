@@ -1,0 +1,600 @@
+.button {
+  background: #58A086;
+  padding: 10px 15px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.button:hover {
+  background: #44856d;
+  border-radius: 3px;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #1A4043;
+}
+
+.footer .footer-description .powered, .footer .footer-description .text, .footer .footer-description .left-block .text-footer, .footer .footer-block .footer__navigation .navigation__list .list__link, .contact .contact__content form .input::placeholder, .contact .contact__content form .input, .service .wrapper .service__content .service-content__section .wrapper__services .service__item .service-item__subtitle, .advantage .wrapper .advantage__content .wrapper__advantages .block-advantage .block-advantage__paragraph, .advantage .wrapper .advantage__content .advantage__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: #1A4043;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 14px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+.header .wrapper {
+  max-width: 1033px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.header .header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__content .header__navigation {
+  margin-left: auto;
+  margin-right: 51px;
+  width: 33%;
+}
+.header .header__content .header__navigation .navigation__list {
+  list-style: none;
+  display: flex;
+}
+.header .header__content .header__navigation .navigation__list .list__item {
+  width: 24%;
+  text-align: center;
+}
+.header .header__content .header__navigation .navigation__item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16px;
+  color: #1A4043;
+  position: relative;
+}
+.header .header__content .header__navigation .navigation__item:hover {
+  font-weight: 700;
+}
+
+.it-raced-data {
+  height: 100vh;
+  padding-top: 122px;
+  padding-bottom: 121px;
+}
+.it-raced-data .wrapper {
+  max-width: 1033px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.it-raced-data .wrapper .it-raced-data__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img {
+  height: 100%;
+  width: 419px;
+  position: relative;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #1A4043;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 60px;
+  transform: translate(-50%, -50%) rotate(90deg);
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -moz-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  -o-transform: translate(-50%, -50%) rotate(90deg);
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__second-img {
+  max-width: 449px;
+  height: 65%;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__second-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__second-img .lines {
+  position: absolute;
+  height: 47px;
+  width: 4px;
+  top: 35%;
+  transform: translateY(-50%);
+  background: #1A4043;
+  right: -5px;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__second-img .lines::after {
+  content: "";
+  height: 47px;
+  width: 4px;
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 0;
+  background: #1A4043;
+}
+.it-raced-data .wrapper .it-raced-data__content .it-raced-data__second-img .lines::before {
+  content: "";
+  height: 47px;
+  width: 4px;
+  position: absolute;
+  display: block;
+  right: 15px;
+  top: 0;
+  background: #1A4043;
+}
+
+.advantage {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.advantage .wrapper {
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.advantage .wrapper .advantage__content {
+  text-align: center;
+}
+.advantage .wrapper .advantage__content .advantage__subtitle {
+  line-height: 25px;
+  margin-top: 10px;
+}
+.advantage .wrapper .advantage__content .wrapper__advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 82px;
+}
+.advantage .wrapper .advantage__content .wrapper__advantages .block-advantage {
+  flex-basis: 16%;
+  position: relative;
+  transition: 0.5s ease;
+}
+.advantage .wrapper .advantage__content .wrapper__advantages .block-advantage::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  background: #868B65;
+  transform: translateX(-50%);
+  top: -22px;
+  transition: 0.5s ease;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.advantage .wrapper .advantage__content .wrapper__advantages .block-advantage:hover::before {
+  top: -26px;
+  width: 80%;
+}
+.advantage .wrapper .advantage__content .wrapper__advantages .block-advantage .block-advantage__paragraph {
+  line-height: 22px;
+  text-align: center;
+}
+.advantage .wrapper .advantage__content .button {
+  margin: 40px auto 0;
+}
+
+.service {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.service .wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.service .wrapper .service__content {
+  text-align: center;
+}
+.service .wrapper .service__content .service-content__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item {
+  display: flex;
+  align-items: center;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item .item-img {
+  width: 65px;
+  margin-right: 14px;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item:first-child {
+  max-width: 268px;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item:last-child {
+  max-width: 329px;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item .service-item__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1A4043;
+  text-align: left;
+}
+.service .wrapper .service__content .service-content__section .wrapper__services .service__item .service-item__subtitle {
+  line-height: 20px;
+  text-align: left;
+  margin-top: 8px;
+}
+.service .wrapper .service__content .button {
+  margin-top: 40px;
+}
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 153px;
+}
+.contact .wrapper {
+  max-width: 1073px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.contact .contact__content {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .contact__content .contact__img {
+  max-width: 361px;
+  position: relative;
+}
+.contact .contact__content .contact__img img {
+  object-position: 50% 50%;
+  object-fit: none;
+  width: 100%;
+  height: 100%;
+}
+.contact .contact__content .contact__img .first-lines {
+  position: absolute;
+  transform: translateY(-50%);
+  left: -6px;
+  width: 4px;
+  height: 47px;
+  background: #58A086;
+}
+.contact .contact__content .contact__img .first-lines::after {
+  content: "";
+  width: 4px;
+  height: 47px;
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  background: #58A086;
+}
+.contact .contact__content .contact__img .first-lines::before {
+  content: "";
+  width: 4px;
+  height: 47px;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  background: #58A086;
+}
+.contact .contact__content .contact__img .second-lines {
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  width: 4px;
+  height: 47px;
+  background: #58A086;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+}
+.contact .contact__content .contact__img .second-lines::after {
+  content: "";
+  width: 4px;
+  height: 47px;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  background: #58A086;
+}
+.contact .contact__content .contact__img .second-lines::before {
+  content: "";
+  width: 4px;
+  height: 47px;
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
+  background: #58A086;
+}
+.contact .contact__content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 652px;
+}
+.contact .contact__content form .input {
+  flex-basis: 48%;
+  border: 2px solid #58A086;
+  line-height: 16px;
+  padding: 11px 18px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.contact .contact__content form .input::placeholder {
+  color: #1A4043;
+  text-align: left;
+  font-weight: 300;
+}
+.contact .contact__content form .input-message {
+  flex-basis: 100%;
+  resize: none;
+}
+.contact .contact__content form .button {
+  margin: 0 auto;
+}
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 30px;
+  background: #58A086;
+  overflow: hidden;
+}
+.footer .wrapper {
+  max-width: 1072px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .footer-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.footer .footer-block .logo {
+  margin-left: -23px;
+}
+.footer .footer-block::before {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: #fff;
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: -10px;
+}
+.footer .footer-block .footer__navigation {
+  margin-left: auto;
+  margin-right: 51px;
+  width: 33%;
+}
+.footer .footer-block .footer__navigation .navigation__list {
+  list-style: none;
+  display: flex;
+}
+.footer .footer-block .footer__navigation .navigation__list .list__item {
+  width: 24%;
+  text-align: center;
+}
+.footer .footer-block .footer__navigation .navigation__list .list__link {
+  line-height: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+.footer .footer-block .footer__navigation .navigation__list .list__link:hover {
+  font-weight: 700;
+}
+.footer .footer-block .button {
+  background: #fff;
+  color: #58A086;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+.footer .footer-block .button:hover {
+  background: #dcf4eb;
+}
+.footer .footer-description {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .footer-description .socials {
+  margin-bottom: 20px;
+}
+.footer .footer-description .socials a {
+  margin-right: 10px;
+}
+.footer .footer-description .socials i {
+  color: #fff;
+  font-size: 18px;
+}
+.footer .footer-description .left-block .text-footer {
+  color: #fff;
+  font-size: 14px;
+  padding-right: 15px;
+}
+.footer .footer-description .text {
+  color: #fff;
+  margin-left: auto;
+  margin-right: 72px;
+}
+.footer .footer-description .text span {
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer .footer-description .powered {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+.footer .footer-description .powered::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 68px;
+  background: #EB363C;
+  top: 0;
+  right: 20px;
+  z-index: -1;
+}
+
+@media (max-height: 780px) {
+  .it-raced-data .wrapper .it-raced-data__content .it-raced-data__title {
+    font-size: 75px;
+  }
+}
+@media (max-width: 986px) {
+  .header .header__content .header__navigation {
+    width: 60%;
+  }
+
+  .it-raced-data .wrapper .it-raced-data__content {
+    align-items: center;
+    justify-content: center;
+  }
+  .it-raced-data .wrapper .it-raced-data__content .it-raced-data__second-img {
+    display: none;
+  }
+  .it-raced-data .wrapper .it-raced-data__content .it-raced-data__title {
+    display: none;
+  }
+  .it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img::after {
+    content: "itracedate";
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: #1A4043;
+    font-size: 70px;
+    font-weight: 700;
+    position: absolute;
+    right: -113%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    -moz-transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
+    -o-transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .advantage {
+    padding-top: 10px;
+  }
+  .advantage .wrapper .advantage__content .wrapper__advantages {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .advantage .wrapper .advantage__content .wrapper__advantages .block-advantage {
+    flex-basis: 28%;
+    padding: 0 3%;
+    margin-bottom: 70px;
+  }
+  .advantage .wrapper .advantage__content .button {
+    margin-top: 0;
+  }
+
+  .service .wrapper .service__content .service-content__section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .service .wrapper .service__content .service-content__section .wrapper__services {
+    margin-top: 20px;
+    order: 2;
+  }
+  .service .wrapper .service__content .service-content__section .img {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .contact .contact__content {
+    justify-content: center;
+  }
+  .contact .contact__img {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header .button {
+    display: none;
+  }
+
+  .it-raced-data {
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+  .it-raced-data .wrapper .it-raced-data__content {
+    align-items: flex-end;
+    justify-content: start;
+  }
+  .it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img {
+    width: 80%;
+    height: 70%;
+  }
+  .it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img::after {
+    right: -395px;
+    font-size: 60px;
+  }
+}

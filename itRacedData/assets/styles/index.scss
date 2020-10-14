@@ -1,0 +1,756 @@
+$color-text: #1A4043;
+$font: 'Open Sans', sans-serif;
+
+%button-style {
+    background: #58A086;
+    padding: 10px 15px;
+    border: none;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+    &:hover {
+        background: #44856d;
+        border-radius: 3px;
+    }
+}
+
+%title-section-style {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: $color-text;
+}
+
+%text-style {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: $color-text;
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    @extend %button-style;
+}
+
+.title {
+    @extend %title-section-style;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+
+    .wrapper {
+        max-width: 1033px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .header__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__navigation {
+            margin-left: auto;
+            margin-right: 51px;
+            width: 33%;
+
+            
+            .navigation__list {
+                list-style: none;
+                display: flex;
+                .list__item {
+                    width: 24%;
+                    text-align: center;
+                }
+            }
+
+            .navigation__item {
+                font-family: $font;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 16px;
+                color: $color-text;
+                position: relative;
+            }
+
+            .navigation__item:hover {
+                font-weight: 700;
+                
+            }
+
+            // .navigation__item {
+            //     margin-left: 20px;
+            // } 
+        }
+    }
+}
+
+.it-raced-data {
+    height: 100vh;
+    padding-top: 122px;
+    padding-bottom: 121px;
+    .wrapper {
+        max-width: 1033px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .it-raced-data__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .it-raced-data__first-img {
+                height: 100%;
+                width: 419px;
+                position: relative;
+                img {
+                    -o-object-fit: cover;
+                       object-fit: cover;
+                    -o-object-position: 50% 50%;
+                       object-position: 50% 50%;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                
+            }
+
+            .it-raced-data__title {
+                margin: 0;
+                text-transform: uppercase;
+                color: $color-text;
+                font-family: $font;
+                font-weight: bold;
+                font-size: 90px;
+                line-height: 60px;
+                transform: translate(-50%, -50%) rotate(90deg);
+                position: absolute;
+                top: 50%;
+                left: 49%;
+                -webkit-transform: translate(-50%, -50%) rotate(90deg);
+                -moz-transform: translate(-50%, -50%) rotate(90deg);
+                -ms-transform: translate(-50%, -50%) rotate(90deg);
+                -o-transform: translate(-50%, -50%) rotate(90deg);
+}
+
+            .it-raced-data__second-img {
+                max-width: 449px;
+                height: 65%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .lines {
+                    position: absolute;
+                    height: 47px;
+                    width: 4px;
+                    top: 35%;
+                    transform: translateY(-50%);
+                    background: $color-text;
+                    right: -5px;
+
+                    &::after {
+                        content: "";
+                        height: 47px;
+                        width: 4px;
+                        position: absolute;
+                        display: block;
+                        left: 15px;
+                        top: 0;
+                        background: $color-text;
+                    }
+
+                    &::before {
+                        content: "";
+                        height: 47px;
+                        width: 4px;
+                        position: absolute;
+                        display: block;
+                        right: 15px;
+                        top: 0;
+                        background: $color-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.advantage {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    
+    .wrapper {
+        max-width: 1025px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .advantage__content {
+            text-align: center;
+
+            .advantage__subtitle {
+                @extend %text-style;
+                line-height: 25px;
+                margin-top: 10px;
+            }
+        
+            .wrapper__advantages {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 82px;
+                
+        
+                .block-advantage {
+                    flex-basis: 16%;
+                    position: relative;
+                    transition: 0.5s ease;
+
+                    &::before {
+                        content: "";
+                        width: 50%;
+                        position: absolute;
+                        left: 50%;
+                        height: 2px;
+                        background: #868B65;
+                        transform: translateX(-50%);
+                        top: -22px;
+                        transition: 0.5s ease;
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+                    }
+
+                    &:hover::before {
+                        top:-26px;
+                        width: 80%;
+                    }
+
+                    .block-advantage__paragraph {
+                        @extend %text-style;
+                        line-height: 22px;
+                        text-align: center;
+                    }
+                }
+            }
+        
+            .button {
+                margin: 40px auto 0;
+            }
+        }
+    }
+    
+}
+
+.service {
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    .wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .service__content {
+            text-align: center;
+            .service-content__section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                .wrapper__services {
+                    .service__item {
+                        display: flex;
+                        align-items: center;
+
+                        .item-img {
+                            width: 65px;
+                            margin-right: 14px;
+                        }
+                        
+                        
+                        &:first-child {
+                            max-width: 268px;
+                        }
+
+                        &:last-child {
+                            max-width: 329px;
+                        }
+                        
+                        &:not(:last-child) {
+                            margin-bottom: 40px;
+                        }
+
+                        .service-item__title {
+                            font-family: $font;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 20px;
+                            color: $color-text;
+                            text-align: left;
+                        }
+
+                        .service-item__subtitle {
+                            @extend %text-style;
+                            line-height: 20px;
+                            text-align: left;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+
+                // .service__img {
+                //     height: 100%;
+                //     position: relative;
+
+                //     img:last-child{
+                //         position: absolute;
+                //         top: 0;
+                //     }
+                // }
+            }
+    
+            .button {
+                margin-top: 40px;
+            }
+        }
+        
+    }
+}
+
+.contact {
+    padding-top: 60px;
+    padding-bottom: 153px;
+    .wrapper {
+        max-width: 1073px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .contact__content {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .contact__img {
+            max-width: 361px;
+            position: relative;
+
+            img {
+                object-position: 50% 50%;
+                object-fit: none;
+                width: 100%;
+                height: 100%;
+            }
+
+            .first-lines {
+                position: absolute;
+                transform: translateY(-50%);
+                left: -6px;
+                width: 4px;
+                height:47px;
+                background: #58A086;
+                &::after {
+                    content: "";
+                    width: 4px;
+                    height:47px;
+                    position: absolute;
+                    left:15px;
+                    top:0px;
+                    background: #58A086;
+                }
+                &::before {
+                    content: "";
+                    width: 4px;
+                    height:47px;
+                    position: absolute;
+                    right:15px;
+                    top:0px;
+                    background: #58A086;
+                }
+            }
+
+            .second-lines {
+                position: absolute;
+                bottom: 0;
+                right: -6px;
+                width: 4px;
+                height: 47px;
+                background: #58A086;
+                
+                &::after {
+                    content: "";
+                    width: 4px;
+                    height:47px;
+                    position: absolute;
+                    left:15px;
+                    bottom:0px;
+                    background: #58A086;
+                }
+                &::before {
+                    content: "";
+                    width: 4px;
+                    height:47px;
+                    position: absolute;
+                    right:15px;
+                    bottom:0px;
+                    background: #58A086;
+                }
+                transform: translateY(50%);
+                -webkit-transform: translateY(50%);
+                -moz-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                -o-transform: translateY(50%);
+}
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 652px;
+
+            .input {
+                flex-basis: 48%;
+                border: 2px solid #58A086;
+                @extend %text-style;
+                line-height: 16px;
+                padding: 11px 18px;
+                text-align: left;
+                margin-bottom: 30px;
+                &::placeholder {
+                    @extend %text-style;
+                    color: $color-text;
+                    text-align: left;
+                    font-weight: 300;
+                }
+            }
+
+            .input-message {
+                flex-basis: 100%;
+                resize: none;
+            }
+
+            .button {
+                margin: 0 auto;
+            }
+
+
+        }
+
+        
+        
+    }
+}
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    background: #58A086;
+    overflow: hidden;
+    
+
+    .wrapper {
+        max-width: 1072px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+    }
+
+    .footer-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .logo {
+            margin-left: -23px;
+        }
+
+        &::before {
+            content: "";
+            height: 2px;
+            width: 50%;
+            background: #fff;
+            position: absolute;
+            display: block;
+            right: 0;
+            bottom: -10px;
+
+        }
+        
+
+        .footer__navigation {
+            margin-left: auto;
+            margin-right: 51px;
+            width: 33%;
+
+            
+            .navigation__list {
+                list-style: none;
+                display: flex;
+                .list__item {
+                    width: 24%;
+                    text-align: center;
+                }
+                .list__link {
+                    @extend %text-style;
+                    line-height: 16px;
+                    color: #fff;
+                    font-weight: 300;
+
+                    &:hover {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+
+        .button {
+            background: #fff;
+            color: #58A086;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+            &:hover {
+                background: #dcf4eb;
+            }
+        }
+    }
+
+    .footer-description {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .socials {
+            a {
+                margin-right: 10px;
+            }
+            i {
+                color: #fff;
+                font-size: 18px;
+            }
+
+            margin-bottom: 20px;
+
+            
+        }
+        .left-block {
+            .text-footer {
+                @extend %text-style;
+                color: #fff;
+                font-size: 14px;
+                padding-right: 15px;
+                
+            }
+            
+        }
+
+        .text{
+            color: #fff;
+            @extend %text-style;
+            margin-left: auto;
+            margin-right: 72px;
+
+            span {
+                padding-right: 20px;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+
+        .powered {
+            @extend %text-style;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 68px;
+                background: #EB363C;
+                top:0;
+                right: 20px;
+                z-index: -1;
+
+            }
+        }
+        
+    }
+}
+
+@media (max-height:780px){
+    .it-raced-data .wrapper .it-raced-data__content .it-raced-data__title {
+        font-size: 75px;
+    }
+}
+
+@media (max-width:986px) {
+
+    .header .header__content .header__navigation {
+        width:60%
+    }
+
+    .it-raced-data {
+        .wrapper {
+            .it-raced-data__content {
+                align-items: center;
+                justify-content: center;
+                .it-raced-data__second-img {
+                    display: none;
+                }
+                .it-raced-data__title{
+                    display: none;
+                }
+                .it-raced-data__first-img {
+                    
+                    &::after {
+                        content:"itracedate";
+                        text-transform: uppercase;
+                        font-family: $font;
+                        color: $color-text;
+                        font-size: 70px;
+                        font-weight: 700;
+                        position: absolute;
+                        right: -113%;
+                        top: 50%;
+                        transform: translate(-50%,-50%) rotate(90deg);
+                        -webkit-transform: translate(-50%,-50%) rotate(90deg);
+                        -moz-transform: translate(-50%,-50%) rotate(90deg);
+                        -ms-transform: translate(-50%,-50%) rotate(90deg);
+                        -o-transform: translate(-50%,-50%) rotate(90deg);
+}
+                }
+            }
+        }
+    }
+
+    .advantage {
+        padding-top: 10px;
+
+        .wrapper {
+            .advantage__content{
+                .wrapper__advantages {
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .block-advantage {
+                        flex-basis: 28%;
+                        padding: 0 3%;
+                        margin-bottom: 70px;
+                    }
+                }
+                .button {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .service {
+        .wrapper {
+            .service__content {
+                .service-content__section {
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .wrapper__services {
+                        margin-top: 20px;
+                        order: 2;
+                    }
+                    .img {
+                        order: 1;
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        .contact__content {
+            justify-content: center;
+        }
+        .contact__img {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width:680px) {
+    .header__navigation {
+        display: none;
+    }
+
+    .header .button {
+        display: none;
+    }
+
+    .it-raced-data {
+        padding-top: 10px;
+        padding-bottom: 100px;
+        .wrapper {
+            .it-raced-data__content {
+                align-items: flex-end;
+                justify-content: start;
+
+                .it-raced-data__first-img {
+                    width: 80%;
+                    height: 70%;
+                    &::after {
+                        right: -395px;
+                        font-size: 60px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+
