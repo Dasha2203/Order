@@ -1,7 +1,7 @@
 <svg width="42" height="55" viewBox="0 0 42 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.0835 45.3333V43.5833C15.0835 39.165 18.6652 35.5833 23.0835 35.5833H24.8335C28.4233 35.5833 31.3335 38.4934 31.3335 42.0833V42.0833" stroke="#FF9680" stroke-width="2"/>
+<path d="M15.0833 45.3333V43.5833C15.0833 39.1651 18.665 35.5833 23.0833 35.5833H24.8333C28.4231 35.5833 31.3333 38.4935 31.3333 42.0833V42.0833" stroke="#58A086" stroke-width="2"/>
 <path d="M35.6667 18.7917L18.3333 2L1 18.7917V40.3333C1 43.0948 3.23858 45.3333 6 45.3333H22.6667" stroke="#1A4043" stroke-width="2"/>
-<circle cx="23.7502" cy="31.2499" r="4.41667" stroke="#FF9680" stroke-width="2"/>
-<path d="M33.5 47.5L30.25 54M36.75 47.5L40 54" stroke="#F7D9A9" stroke-width="2"/>
-<circle cx="35.1248" cy="42.6251" r="5.45833" fill="white" stroke="#F7D9A9"/>
+<circle cx="23.7499" cy="31.25" r="4.41667" stroke="#58A086" stroke-width="2"/>
+<path d="M33.5 47.5L30.25 54M36.75 47.5L40 54" stroke="#58A086" stroke-width="2"/>
+<circle cx="35.1251" cy="42.625" r="5.45833" fill="white" stroke="#58A086"/>
 </svg>

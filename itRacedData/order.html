@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItraceData</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/order.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <img src="assets/icon/logo.svg" alt="logo">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <nav class="header__navigation">
+                    <ul class="navigation__list">
+                        <li class="list__item"><a href="index.html" class="navigation__item">Home</a></li>
+                        <li class="list__item"><a href="services.html" class="navigation__item">Services</a></li>
+                        <li class="list__item"><a href="FAQ.html" class="navigation__item">FAQ’s</a></li>
+                        <li class="list__item"><a href="contact.html" class="navigation__item">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="header-button button">Place An Order</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="order">
+            <div class="wrapper">
+                <h3 class="order__title title">Order Now</h3>
+                <div class="order__content">
+                    
+                    <form action="" class="form-order">
+                        <div class="first-lines"></div>
+                        <div class="second-lines"></div>
+                        <p class="title__person">Personal Details</p>
+                        <div class="person">
+                            <input type="text" placeholder="first">
+                            <input type="text" placeholder="last">
+                            <input type="text" placeholder="company">
+                            <input type="tel" placeholder="phone">
+                            <input type="email" placeholder="email" class="email">
+                        </div>
+                        
+                        <p class="title__file">File Details</p>
+                        <div class="file">
+                            <input type="text" placeholder="your">
+                            <input type="text" placeholder="Requested">
+                            <input type="text" placeholder="County">
+                            <input type="text" placeholder="Block">
+                            <input type="text" placeholder="Lot">
+                        </div>
+                        
+                        <p class="title__premises">File Details</p>
+                        <div class="wrapper-premises">
+                            <div class="add">+</div>
+                            <div class="premises">
+                                <input class="address" type="text" placeholder="Building address">
+                                <input class="unit" type="text" placeholder="Unit">
+                            </div>
+                        </div>
+                        <p class="title__details">Record Details</p>
+                        <div class="record">
+                            <input type="text" placeholder="Record" class="record-input">
+                            <input type="text" placeholder="Additional">
+                            <input type="text" placeholder="Due">
+                        </div>
+                        <button type="submit" class="button">Send Order</button> <br>
+                        <button type="button" class="clear" >Clear Order</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-block">
+                <img class="logo" src="assets/icon/logo-footer.svg" alt="logo">
+                <nav class="footer__navigation">
+                    <ul class="navigation__list">
+                        <li class="list__item"><a href="#" class="list__link">Home</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Services</a></li>
+                        <li class="list__item"><a href="#" class="list__link">FAQ’s</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="button">Place An Order</a>
+            </div>
+            <div class="footer-description">
+                <div class="left-block">
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="span">
+                        <span class="text-footer">New York City</span>
+                        <span class="text-footer">Miami</span>
+                    </div>
+                    
+                </div>
+                <div class="text">
+                    <span>PRIVACY POLICY</span>
+                    <span>TERMS AND CONDITIONS</span>
+                </div>
+                <div class="right-block">
+                    <p class="powered">powered by web & AD</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/scripts/order.js"></script>
+</body>
+</html>
