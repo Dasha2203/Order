@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-    max-width: 1750px;
+    max-width: 1075px;
     margin: 0 auto;
     padding:0 20px;
 }
@@ -331,19 +331,21 @@ section {
 /*styling smart-invoicing section*/
 
 .smart-invoicing {
-    padding-top: 150px;
+    padding-top: 100px;
+    height: 100vh;
 }
 
 .smart-invoicing__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .smart-invoicing__subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 37px;
     color: #303A4B;
     margin-bottom: 40px;
@@ -353,8 +355,8 @@ section {
 .smart-invoicing__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 58px;
+    font-size: 26px;
+    line-height: 28px;
     color: #303A4B;
     margin-bottom: 47px;
     max-width: 900px;
@@ -363,17 +365,20 @@ section {
 .smart-invoicing__paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 29px;
     color: #676767;
     margin-bottom: 61px;
     max-width: 900px;
 }
+.smart-invoicing__description {
+    flex-basis: 44%;
+}
 
 .smart-invoicing__paragraph span{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 29px;
     color: #676767;
 }
@@ -381,13 +386,21 @@ section {
 .smart-invoicing__register-button {
     border-radius: 30px;
     border: 2px solid #303A4B;
-    padding: 18px 60px;
+    padding: 10px 45px;
     font-family: 'Montserrat', sans-serif;
     background: #fff;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #303A4B;
+}
+
+.smart-invoicing__bg {
+    flex-basis: 55%;
+}
+
+.smart-invoicing__bg img{
+    width: 100%;
 }
 
 .professional-invoices-delivered{
@@ -397,14 +410,14 @@ section {
 .professional-invoices-delivered__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 28px;
     line-height: 49px;
     text-align: center;
     color: #303A4B;
 }
 
 .benefits-of-professional-accounts {
-    margin-top: 78px;
+    margin-top: 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -413,13 +426,18 @@ section {
 .benefit__item {
     display: flex;
     align-items: center;
+    max-height: 30px;
+}
+
+.benefit__item img {
+    max-height: 30px;
 }
 
 .benefit__paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: #303A4B;
     margin-left: 23px;
 }
@@ -431,12 +449,22 @@ section {
     align-items: center;
     margin: 90px auto 0;
     max-width: 1185px;
+    
 }
+
 .block-professional-invoice__img .third-invoice{
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    max-height: 515px;
+    
+}
+
+.block-professional-invoice__img .third-invoice img,
+.block-professional-invoice__img .second-invoice img,
+.block-professional-invoice__img .first-invoice img{
+    max-height: 515px;
 }
 
 .invoicing-options {
@@ -446,8 +474,8 @@ section {
 .invoicing-options__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 28px;
+    line-height: 28px;
     text-align: center;
     color: #303A4B;
 }
@@ -455,22 +483,26 @@ section {
 .invoicing-options__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 85px;
+    align-items: flex-start;
+    margin-top: 70px;
 }
 
 .invoicing-options__block {
-    flex-basis: 30%;
+    flex-basis: 24%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.invoicing-options__block img {
+    max-height: 60px;
+}
+
 .option__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 20px;
+    line-height: 22px;
     text-align: center;
     color: #303A4B;
     margin-top: 15px;
@@ -492,7 +524,7 @@ section {
 .option__paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     text-align: center;
     color: #676767;
@@ -500,8 +532,8 @@ section {
 }
 
 .about-application {
-    padding-top: 70px;
-    padding-bottom: 152px;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .about-application__content {
@@ -509,12 +541,15 @@ section {
     justify-content: space-between;
     align-items: center;
 }
+.about-application__bg img{
+    max-height: 430px;
+}
 
 .about-application-bg__subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 36.5px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 24px;
     color: #FDC740;
     text-align: center;
     margin-top: 5px;
@@ -525,15 +560,15 @@ section {
 }
 
 .about-application__description .about-application__merit:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 
 .merit__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 20px;
+    line-height: 27px;
     color: #303A4B;
     margin-bottom: 23px;
 }
@@ -545,8 +580,8 @@ section {
 .merit__paragraph {
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: #676767;
 }
 
@@ -564,7 +599,7 @@ section {
 .save__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 37px;
     color: #FFFFFF;
 }
@@ -574,11 +609,11 @@ section {
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     text-align: center;
     color: #FFFFFF;
-    padding: 19px 60px;
+    padding: 12px 50px;
     background: transparent;
     margin-left: 54px;
 }
@@ -591,29 +626,35 @@ section {
 .invoices__title{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 28px;
     line-height: 49px;
     text-align: center;
 }
 
 .invoices__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 85px;
+    margin-top: 70px;
 }
 
+.invoices__content .invoices__block:nth-child(3n+3) {
+    padding-left: 50px;
+}
+
+
+
 .invoices__block {
-    flex-basis: 30%;
+    flex-basis: 27%;
     display: flex;
     align-items: center;
-    margin-bottom: 33px;
+    margin-bottom: 24px;
 }
 
 .invoices__block-paragraph {
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-family: 'Montserrat', sans-serif;
     color: #303A4B;
@@ -622,7 +663,7 @@ section {
 }
 
 .footer {
-    padding: 53px 0;
+    padding: 42px 0;
 }
 
 .footer .wrapper {
@@ -634,25 +675,32 @@ section {
 .footer-description .copyright, .footer-span {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: #303A4B;
+}
+
+.footer-description .copyright {
+    margin-bottom: 14px;
 }
 
 .footer-span {
     margin-right: 40px;
-    margin-top: 14px;
 }
 
 .footer__navigation .navigation__list .footer-list__link {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: #303A4B;
 }
 
 .footer__navigation .navigation__list .footer-list__item {
     margin-left: 45px;
+}
+
+@media (min-width: 962px) and (max-width: 1210px) {
+    
 }
