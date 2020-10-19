@@ -26,7 +26,9 @@ addPremises.addEventListener('click', () => { // обрабатываем наж
         let buttonRemove1 = document.createElement('div');
     buttonRemove1.append('-');
     buttonRemove1.classList.add('remove');
-        premis.append(buttonRemove1)
+    removePremises = document.querySelectorAll('.remove')
+        premis.append(buttonRemove1);
+        removeItem(removePremises[0], 0)
     }
     //здесь переобъявляю кнопку
     
@@ -40,18 +42,32 @@ addPremises.addEventListener('click', () => { // обрабатываем наж
     premises = document.querySelectorAll('.premises'); // обновляю количество блоков
     console.log('remove: ' + removePremises.length)
     console.log('all: ' + premises.length)
-    removeItem();
+    removeItem(removePremises[removePremises.length-1],removePremises.length-1);
      console.log('все блоки')
     console.log(premises);
 })
 
 
 
-function removeItem() {
-    
-    for (let i = 0; i < removePremises.length; i++) {
-        removePremises[i].addEventListener('click', () => { 
-            containerPremises.removeChild(premises[i]);
+function removeItem(removeButton,index) {
+
+        // if (removePremises.length === 2) {
+        //     removePremises[0].addEventListener('click', () => { 
+        //         containerPremises.removeChild(premises[0]);
+        //         removePremises = document.querySelectorAll('.remove')
+        //         premises = document.querySelectorAll('.premises');
+        //         console.log('то, что яхочу удалть');
+        //         console.log(removePremises[0])
+        //         if (premises.length === 1) {
+        //             premises[0].removeChild(removePremises[0])
+        //         }
+        //         console.log('после удаления ' + removePremises.length)
+        //     })
+        // }
+
+        removeButton.addEventListener('click', () => { 
+            console.log('clock')
+            containerPremises.removeChild(removeButton.parentNode);
             removePremises = document.querySelectorAll('.remove')
             premises = document.querySelectorAll('.premises');
             console.log('то, что яхочу удалть');
@@ -62,7 +78,4 @@ function removeItem() {
             console.log('после удаления ' + removePremises.length)
         })
 
-        
-
-    }
 }

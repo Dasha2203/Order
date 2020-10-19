@@ -60,7 +60,7 @@ $font: 'Open Sans', sans-serif;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
     position: fixed;
     width: 100vw;
-    z-index: 1;
+    z-index: 10000;
 
     .wrapper {
         max-width: 1033px;
@@ -81,8 +81,8 @@ $font: 'Open Sans', sans-serif;
         }
 
         .menu__btn {
-            display: flex; /* используем flex для центрирования содержимого */
-            align-items: center;  /* центрируем содержимое кнопки */
+            display: flex;
+            align-items: center; 
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -92,8 +92,6 @@ $font: 'Open Sans', sans-serif;
             cursor: pointer;
             z-index: 1;
         }
-
-
 
         .menu__btn > span,
         .menu__btn > span::before,
@@ -121,9 +119,9 @@ $font: 'Open Sans', sans-serif;
             top: 11px;
         }
 
-#menu__toggle, .menu__btn {
-    display: none;
-}
+        #menu__toggle, .menu__btn {
+            display: none;
+        }
 
         .header__navigation {
             margin-left: auto;
@@ -147,6 +145,7 @@ $font: 'Open Sans', sans-serif;
                 line-height: 16px;
                 color: $color-text;
                 position: relative;
+                transition: .3s;
 
                 &.active {
                     font-weight: 700;

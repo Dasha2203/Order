@@ -740,7 +740,7 @@
   }
 
   .it-raced-data {
-    padding-top: 10px;
+    padding-top: 80px;
     padding-bottom: 100px;
   }
   .it-raced-data .wrapper .it-raced-data__content {
@@ -757,7 +757,7 @@
   }
   .it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img {
     width: 80%;
-    height: 70%;
+    height: 90%;
   }
   .it-raced-data .wrapper .it-raced-data__content .it-raced-data__first-img::after {
     right: -395px;
