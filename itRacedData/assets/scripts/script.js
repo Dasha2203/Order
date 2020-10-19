@@ -1,29 +1,16 @@
 let itemsBlock = document.querySelectorAll('.block-advantage');
 let itemService = document.querySelectorAll('.service__item');
 
+let currentItem = 0;
+let currentItemService = 0; 
 
-
-console.log('block');
-console.log(itemsBlock);
-console.log('service');
-console.log(itemService)
-
-let currentItem = 0;//block
-let currentItemService = 0; //service
-
-console.log('Первый '+currentItem);
-console.log('Второй '+currentItemService);
 let isEnabled = true;
 
 function changeCurrentItem(n,items,slider) {
     if (slider === 'block-main') {
         currentItem = (n + items.length) % items.length;
-        console.log(items)
-        console.log('Первый '+currentItem);
     }  else if (slider === 'service-main') {
         currentItemService = (n + items.length) % items.length;
-        console.log(items)
-        console.log('Второй ' + currentItemService);
     } else if (slider === 'search') {
         currentItemSearch = (n + items.length) % items.length;
     }
