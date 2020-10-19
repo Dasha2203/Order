@@ -125,6 +125,7 @@
   line-height: 16px;
   color: #1A4043;
   position: relative;
+  transition: 0.3s;
 }
 .header .header__content .header__navigation .navigation__item.active {
   font-weight: 700;
@@ -146,6 +147,7 @@
   list-style: none;
   margin-top: 60px;
   position: relative;
+  background: #fff;
 }
 .ask .list__questions .first-lines {
   position: absolute;
@@ -207,42 +209,58 @@
 }
 .ask .list__questions .question__item {
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
   color: #1A4043;
   padding-bottom: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  background: url("../icon/arrow-down.svg") no-repeat;
-  background-position: top 5px right;
   border-bottom: 2px solid rgba(26, 64, 67, 0.5);
-  padding-bottom: 8px;
+  padding-top: 20px;
+  position: relative;
 }
-.ask .list__questions .question__item.active {
-  font-weight: 700;
-  background: url("../icon/arrow-top.svg") no-repeat;
-  background-position: top 5px right;
-  border-bottom: none;
+.ask .list__questions .question__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background: url(../icon/arrow-down.svg) no-repeat;
+  background-position: center center;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
-.ask .list__questions .question__item.active .answer {
-  display: block;
-  padding-top: 5px;
-  border-top: 2px solid rgba(26, 64, 67, 0.5);
-}
-.ask .list__questions .question__item .answer {
+.ask .list__questions .question__item .question__title {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
   line-height: 16px;
-  color: #1A4043;
-  display: none;
-  line-height: 26px;
-  margin-top: 8px;
+  font-weight: 400;
+  transition: 0.3s;
 }
-.ask .list__questions .question__item:hover {
+.ask .list__questions .question__item .question__title:hover {
   font-weight: 700;
+}
+.ask .list__questions .question__item.active .question__title {
+  font-weight: 700;
+}
+.ask .list__questions .question__item.active + .answer {
+  max-height: 1000px;
+}
+.ask .list__questions .question__item.active::before {
+  transform: translateY(-50%) rotate(-180deg);
+  transform-origin: center center;
+}
+.ask .list__questions .answer {
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #1A4043;
+  max-height: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
 }
 
 .footer {
@@ -292,6 +310,7 @@
   line-height: 16px;
   color: #fff;
   font-weight: 300;
+  transition: 0.3s;
 }
 .footer .footer-block .footer__navigation .navigation__list .list__link.active {
   font-weight: 700;
@@ -335,7 +354,7 @@
 }
 .footer .footer-description .text span {
   padding-right: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 14px;
 }
@@ -374,6 +393,9 @@
   }
   .ask .first-lines, .ask .second-lines {
     display: none;
+  }
+  .ask .list__questions .question__item .question__title {
+    max-width: 575px;
   }
 
   .footer .footer-block .footer__navigation {
@@ -445,6 +467,10 @@
     display: none;
   }
 
+  .ask .list__questions .question__item .question__title {
+    max-width: 210px;
+    line-height: 22px;
+  }
   .ask .list__questions .question__item {
     line-height: 22px;
   }

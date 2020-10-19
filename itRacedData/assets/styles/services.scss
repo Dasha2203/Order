@@ -185,12 +185,19 @@ $font: 'Open Sans', sans-serif;
                 .blocks{
                     display: flex;
                     justify-content: space-between;
+                    align-items: stretch;
                 }
         
                 .block-search {
                     flex-basis: 16%;
                     position: relative;
                     transition: 0.5s ease;
+                    padding-top: 10px;
+
+                    &:hover {
+                        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+                        transform: scale(1.1);
+                    }
 
                     .block-search__paragraph {
                         @extend %text-style;
@@ -385,6 +392,7 @@ $font: 'Open Sans', sans-serif;
                     line-height: 16px;
                     color: #fff;
                     font-weight: 300;
+                    transition: .3s;
 
                     &.active {
                         font-weight: 700;
@@ -445,7 +453,7 @@ $font: 'Open Sans', sans-serif;
 
             span {
                 padding-right: 20px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 font-weight: 400;
                 font-size: 14px;
             }

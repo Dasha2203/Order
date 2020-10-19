@@ -125,6 +125,7 @@
   line-height: 16px;
   color: #1A4043;
   position: relative;
+  transition: 0.3s;
 }
 .header .header__content .header__navigation .navigation__item.active {
   font-weight: 700;
@@ -140,7 +141,7 @@
 .contact .wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 994px;
+  max-width: 1034px;
 }
 .contact .contact__content {
   display: flex;
@@ -208,17 +209,18 @@
   background: #1A4043;
 }
 .contact .contact__content form {
-  flex-basis: 44%;
+  flex-basis: 46%;
   display: flex;
   flex-direction: column;
 }
 .contact .contact__content form .input {
   border: none;
-  border-bottom: 2px solid rgba(26, 64, 67, 0.5);
+  border-bottom: 2px solid #58A086;
   padding: 10px 20px;
   margin-bottom: 30px;
   line-height: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #1A4043;
   text-align: left;
 }
 .contact .contact__content form .input::placeholder {
@@ -234,7 +236,7 @@
   padding-bottom: 20px;
 }
 .contact .contact__content .contact__information {
-  flex-basis: 44%;
+  flex-basis: 46%;
   background: #58A086;
   padding: 30px 50px;
   height: 100%;
@@ -258,27 +260,26 @@
 }
 .contact .contact__content .contact__information .block-contact:last-child p {
   background: url(../icon/geo.svg) no-repeat;
-  background-position: top left;
+  background-position: top 5px left;
 }
 .contact .contact__content .contact__information .block-contact p {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
-  max-width: 288px;
-  padding-left: 30px;
+  padding-left: 55px;
 }
 .contact .contact__content .contact__information .block-contact:nth-child(2) p {
   background: url(../icon/email.svg) no-repeat;
-  background-position: top left;
+  background-position: center left;
 }
 .contact .contact__content .contact__information .block-contact:nth-child(3) p {
   background: url(../icon/phone.svg) no-repeat;
-  background-position: top left;
+  background-position: center left;
 }
 .contact .contact__content .contact__information .block-contact:nth-child(4) p {
   background: url(../icon/geo.svg) no-repeat;
-  background-position: top left;
+  background-position: top 5px left;
 }
 
 .footer {
@@ -328,6 +329,7 @@
   line-height: 16px;
   color: #fff;
   font-weight: 300;
+  transition: 0.3s;
 }
 .footer .footer-block .footer__navigation .navigation__list .list__link.active {
   font-weight: 700;
@@ -371,7 +373,7 @@
 }
 .footer .footer-description .text span {
   padding-right: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 14px;
 }

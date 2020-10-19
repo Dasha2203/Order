@@ -155,11 +155,17 @@
 .search .wrapper .search__content .wrapper__search .blocks {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 .search .wrapper .search__content .wrapper__search .block-search {
   flex-basis: 16%;
   position: relative;
   transition: 0.5s ease;
+  padding-top: 10px;
+}
+.search .wrapper .search__content .wrapper__search .block-search:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  transform: scale(1.1);
 }
 .search .wrapper .search__content .wrapper__search .block-search .block-search__paragraph {
   line-height: 22px;
@@ -325,6 +331,7 @@
   line-height: 16px;
   color: #fff;
   font-weight: 300;
+  transition: 0.3s;
 }
 .footer .footer-block .footer__navigation .navigation__list .list__link.active {
   font-weight: 700;
@@ -368,7 +375,7 @@
 }
 .footer .footer-description .text span {
   padding-right: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 14px;
 }
