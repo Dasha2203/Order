@@ -129,6 +129,7 @@
   line-height: 16px;
   color: #1A4043;
   position: relative;
+  transition: 0.3s;
 }
 .header .header__content .header__navigation .navigation__item:hover {
   font-weight: 700;
@@ -226,13 +227,12 @@
   border: 1px solid rgba(26, 64, 67, 0.5);
   padding: 13px 10px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #1A4043;
 }
 .order .order__content input::placeholder {
-  text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -280,12 +280,11 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.order .order__content .wrapper-premises .premises .address {
+.order .order__content .wrapper-premises .premises .Address {
   flex-basis: 50%;
 }
-.order .order__content .wrapper-premises .premises .unit {
+.order .order__content .wrapper-premises .premises .Unit {
   margin-left: 20px;
-  margin-right: auto;
 }
 .order .order__content .wrapper-premises .premises:nth-child(2) {
   justify-content: flex-start;
@@ -305,7 +304,7 @@
   font-weight: 700;
   font-size: 24px;
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   right: 0;
 }
 .order .order__content .remove {
@@ -322,6 +321,8 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 24px;
+  margin-left: 10px;
+  margin-right: auto;
 }
 .order .order__content .record {
   display: flex;
@@ -384,6 +385,7 @@
   line-height: 16px;
   color: #fff;
   font-weight: 300;
+  transition: 0.3s;
 }
 .footer .footer-block .footer__navigation .navigation__list .list__link:hover {
   font-weight: 700;
@@ -424,7 +426,7 @@
 }
 .footer .footer-description .text span {
   padding-right: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 14px;
 }
@@ -515,6 +517,10 @@
     display: none;
   }
 
+  .order .order__content .wrapper-premises .premises .Unit {
+    margin-left: 0;
+  }
+
   .order .order__content form {
     width: 100%;
     text-align: center;
@@ -541,7 +547,7 @@
   .order .order__content .premises input {
     flex-basis: 55%;
   }
-  .order .order__content .premises .address {
+  .order .order__content .premises .Address {
     order: 1;
     margin-bottom: 20px;
   }
@@ -549,10 +555,10 @@
     order: 2;
   }
   .order .order__content .premises .remove {
-    order: 2;
-  }
-  .order .order__content .premises .unit {
     order: 3;
+  }
+  .order .order__content .premises .Unit {
+    order: 2;
   }
   .order .order__content .record input {
     flex-basis: 100%;

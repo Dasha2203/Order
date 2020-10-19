@@ -37,15 +37,12 @@ $font: 'Open Sans', sans-serif;
     color: $color-text;
 }
 
-
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 .button {
     @extend %button-style;
@@ -83,8 +80,8 @@ $font: 'Open Sans', sans-serif;
         }
 
         .menu__btn {
-            display: flex; /* используем flex для центрирования содержимого */
-            align-items: center;  /* центрируем содержимое кнопки */
+            display: flex;
+            align-items: center; 
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -94,8 +91,6 @@ $font: 'Open Sans', sans-serif;
             cursor: pointer;
             z-index: 1;
         }
-
-
 
         .menu__btn > span,
         .menu__btn > span::before,
@@ -123,9 +118,9 @@ $font: 'Open Sans', sans-serif;
             top: 11px;
         }
 
-#menu__toggle, .menu__btn {
-    display: none;
-}
+        #menu__toggle, .menu__btn {
+            display: none;
+        }
 
         .header__navigation {
             margin-left: auto;
@@ -149,6 +144,7 @@ $font: 'Open Sans', sans-serif;
                 line-height: 16px;
                 color: $color-text;
                 position: relative;
+                transition: .3s;
 
                 &.active {
                     font-weight: 700;
@@ -159,10 +155,6 @@ $font: 'Open Sans', sans-serif;
                 font-weight: 700;
                 
             } 
-
-            // .navigation__item {
-            //     margin-left: 20px;
-            // } 
         }
     }
 }
@@ -313,7 +305,12 @@ $font: 'Open Sans', sans-serif;
                 .block-advantage {
                     flex-basis: 16%;
                     position: relative;
-                    transition: 0.5s ease;
+                    transition: 0.3s ease;
+                    cursor: default;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
 
                     &::before {
                         content: "";
@@ -330,11 +327,6 @@ $font: 'Open Sans', sans-serif;
                         -ms-transform: translateX(-50%);
                         -o-transform: translateX(-50%);
                     }
-
-                    // &:hover::before {
-                    //     top:-26px;
-                    //     width: 80%;
-                    // }
 
                     .block-advantage__paragraph {
                         @extend %text-style;
@@ -413,16 +405,6 @@ $font: 'Open Sans', sans-serif;
                         }
                     }
                 }
-
-                // .service__img {
-                //     height: 100%;
-                //     position: relative;
-
-                //     img:last-child{
-                //         position: absolute;
-                //         top: 0;
-                //     }
-                // }
             }
     
             .button {
@@ -614,6 +596,7 @@ $font: 'Open Sans', sans-serif;
                     line-height: 16px;
                     color: #fff;
                     font-weight: 300;
+                    transition: 0.3s;
                     &.active {
                         font-weight: 700;
                     }
@@ -672,7 +655,6 @@ $font: 'Open Sans', sans-serif;
 
             span {
                 padding-right: 20px;
-                text-transform: uppercase;
                 font-weight: 400;
                 font-size: 14px;
             }
@@ -756,7 +738,7 @@ $font: 'Open Sans', sans-serif;
                         -moz-transform: translate(-50%,-50%) rotate(90deg);
                         -ms-transform: translate(-50%,-50%) rotate(90deg);
                         -o-transform: translate(-50%,-50%) rotate(90deg);
-}
+                    }
                 }
             }
         }
@@ -777,12 +759,10 @@ $font: 'Open Sans', sans-serif;
                             margin-bottom: 70px;
                         }
                     }
-                    
                 }
                 .button {
                     margin-top: 0;
                 }
-                
             }
         }
     }
@@ -799,9 +779,7 @@ $font: 'Open Sans', sans-serif;
                         display: flex;
                         flex-wrap: wrap;
                         align-items: center;
-
                         margin-top: 40px;
-                        
                     }
                     .img {
                         order: 0;
@@ -811,7 +789,6 @@ $font: 'Open Sans', sans-serif;
                     .first-column {
                         order:1; 
                     }
-
                     .second-column {
                         order: 2;
                     }
@@ -828,7 +805,6 @@ $font: 'Open Sans', sans-serif;
         .contact__img {
             display: none;
         }
-
     }
 
     .footer {
@@ -936,7 +912,6 @@ $font: 'Open Sans', sans-serif;
                         font-size: 60px;
                     }
                 }
-                
             }
         }
     }
@@ -947,7 +922,6 @@ $font: 'Open Sans', sans-serif;
                 .wrapper__advantages {
                     position: relative;
                     margin-top: 40px;
-
                     .left-arrow {
                         display: block;
                         position: absolute;
@@ -959,7 +933,7 @@ $font: 'Open Sans', sans-serif;
                         -moz-transform: translateY(-50%);
                         -ms-transform: translateY(-50%);
                         -o-transform: translateY(-50%);
-}
+                    }
 
                     .right-arrow {
                         display: block;
@@ -1029,11 +1003,7 @@ $font: 'Open Sans', sans-serif;
                             animation-name: right;
                         }
                     }
-
-
-
                 }
-
                 .button {
                     margin-top: 20px;
                 }

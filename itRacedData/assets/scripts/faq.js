@@ -1,21 +1,22 @@
-//FAQ's
-let questionItem = document.querySelectorAll('.question__item');
-console.log(questionItem);
+let questionsFAQ = document.querySelectorAll('.question__item');
 
-// for (let i = 0; i < questionItem.length; i++) {
-//     console.log(questionItem[i]);
-//     questionItem[i].addEventListener('click', () => {
-//         alert('произошло нажатие')
-//         console.log(questionItem[i].classList.contain('active'))
-//     })
-// }
+questionsFAQ.forEach(question => {
 
-for (let i =0; i < questionItem.length; i++) {
-    questionItem[i].addEventListener('click', ()=> {
-        if (!questionItem[i].classList.contains('active')) {
-            questionItem[i].classList.add('active');
+    question.addEventListener('click', event => {
+        
+        const answer = question.nextElementSibling;
+        if(question.classList.contains('active')) {
+            question.classList.remove('active')
+            answer.style.maxHeight = 0;
         } else {
-            questionItem[i].classList.remove('active');
+            //Removing classes in all elements 
+            questionsFAQ.forEach(questionItem => {
+                questionItem.classList.remove('active');
+                questionItem.nextElementSibling.style.maxHeight = 0;
+            })
+            question.classList.add('active')
+            answer.style.maxHeight = answer.scrollHeight + 'px'
         }
+
     })
-}
+})
