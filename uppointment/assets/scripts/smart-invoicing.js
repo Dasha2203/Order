@@ -1,7 +1,7 @@
 
 
 let items = document.querySelectorAll('.method');
-console.log('ghbdtn')
+
 
 let currentItem = 0;
 let isEnabled = true;
@@ -52,8 +52,6 @@ function nextItem(n) {
     showItem('from-right')
 }
 document.querySelector('.arrow-right').addEventListener('click', function() {
-    
-    alert('Произошел клик')
     if (isEnabled) {
         nextItem(currentItem)
     }

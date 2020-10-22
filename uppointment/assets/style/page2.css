@@ -421,7 +421,6 @@
 .benefit__item {
     display: flex;
     align-items: center;
-    max-height: 30px;
 }
 
 .benefit__paragraph {
@@ -527,8 +526,10 @@
     justify-content: space-between;
     align-items: center;
 }
-.about-application__bg img{
-    max-height: 430px;
+
+
+.about-application__bg  {
+    position: relative;
 }
 
 .about-application-bg__subtitle {
@@ -543,6 +544,18 @@
 
 .about-application__description {
     max-width: 846px;
+}
+
+.message-1 {
+    position: absolute;
+    top: 19%;
+    right: 17%;
+}
+
+.message-2 {
+    position: absolute;
+    top: 32%;
+    left: 4%;
 }
 
 .about-application__description .about-application__merit:not(:last-child) {
@@ -825,10 +838,9 @@
         width: 100%;
     }
     .wrapper {
-        max-width: 320px;
+        max-width: 300px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 10px;
     }
     .header__navigation {
         visibility: hidden;
@@ -847,17 +859,22 @@
     .header .navigation__list {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         height: 100vh;
         width: 70%;
         background: #fff;
         margin-left: auto;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        padding-top: 35%;
     }
 
     .navigation__list .list__item {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .navigation__list .list__link {
+        font-size: 18px;
     }
     .header__navigation .submenu {
         padding: 0;
@@ -870,6 +887,7 @@
         text-align: left;
         max-width: 300px;
         margin-left: 40px;
+        
     }
 
     .header__navigation  ul li .submenu a:first-child,
@@ -882,9 +900,13 @@
         margin-bottom: 20px;
         max-width: 220px;
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
-    }
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        display: block;
+        
+}
 
     .header__navigation  ul li .submenu a:first-child:active,
     .header__navigation  ul li .submenu a:nth-child(2):active,
@@ -901,10 +923,16 @@
         background: none;
     }
 
-    .header__navigation ul li:active .submenu {
-        visibility: visible;
-        opacity: 1;
+    
+
+    .header__navigation .visible {
+        display: block;
     }
+
+    .header__navigation .notvisible {
+        display: none;
+    }
+
 
     .header__navigation ul li:active ~ .navigation__list{
         margin-top: -20px;
@@ -964,6 +992,8 @@
         align-items: flex-start;
     }
 
+    
+
     .benefits-of-professional-accounts .benefit__item {
         margin-top: 30px;
     }
@@ -994,8 +1024,21 @@
         align-items: flex-start;
     }
 
-    .about-application__bg img{
+    .about-application__bg img:first-child{
         width: 100%;
+    }
+
+    .message-1, .message-2{
+        width: 100px;
+    }
+
+    .message-1 {
+        top: 10%;
+    }
+
+    .message-2 {
+        top: 25%;
+        left: -2%;
     }
 
     .save__content {
