@@ -795,13 +795,12 @@ section {
     width: 100%;
 }
 
-.methods div img{
-    height: 36px;
+.method {
+    max-height: 25px;
+    max-height: 25px;
+    
 }
 
-.paid__payment-methods img {
-    max-height: 30px;
-}
 .arrow-left, .arrow-right {
     display: none;
 }
@@ -1268,22 +1267,23 @@ margin-bottom: 50px;
         margin-bottom: 0;
     }
 
+    .paid__payment-methods {
+        margin-top: 30px;
+    }
+
     .methods {
         width: 70%;
         position: relative;
-        height: 100px;
+        height: 50px;
     overflow: hidden;
     }
     .method {
         display: none;
         position: relative;
         animation: 0.5s ease-in-out;
-        margin: 0 auto;
-        width: 100%;
         text-align: center;
         height: 100%;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .active, .next {
@@ -1293,7 +1293,8 @@ margin-bottom: 50px;
     
     .next {
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         
     }
 
@@ -1322,11 +1323,12 @@ margin-bottom: 50px;
         width: 100%;
     }
 
-    .method {
-        margin: 0 auto;
-    }
+    
     .paid__payment-methods div:nth-child(n+4) {
-        margin-top: 0;
+        margin-top: auto;
+    }
+    .method {
+        margin:auto;
     }
 
     .register__paragraph {
