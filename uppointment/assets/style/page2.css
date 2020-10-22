@@ -20,11 +20,6 @@
     width: 100%;
 }
 
-section {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .title span {
     color: #FFC01E;
     font-weight: bold;
@@ -331,8 +326,8 @@ section {
 /*styling smart-invoicing section*/
 
 .smart-invoicing {
-    padding-top: 100px;
-    height: 100vh;
+    padding-top: 212px;
+    padding-bottom: 43px;
 }
 
 .smart-invoicing__content {
@@ -346,33 +341,33 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 18px;
-    line-height: 37px;
+    line-height: 22px;
     color: #303A4B;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
     max-width: 900px;
 }
 
 .smart-invoicing__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 35px;
     color: #303A4B;
-    margin-bottom: 47px;
+    margin-bottom: 33px;
     max-width: 900px;
 }
 
 .smart-invoicing__paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 29px;
+    font-size: 15px;
+    line-height: 25px;
     color: #676767;
-    margin-bottom: 61px;
+    margin-bottom: 26px;
     max-width: 900px;
 }
 .smart-invoicing__description {
-    flex-basis: 44%;
+    flex-basis: 55%;
 }
 
 .smart-invoicing__paragraph span{
@@ -386,32 +381,32 @@ section {
 .smart-invoicing__register-button {
     border-radius: 30px;
     border: 2px solid #303A4B;
-    padding: 10px 45px;
+    padding: 11px 25px;
     font-family: 'Montserrat', sans-serif;
     background: #fff;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 18px;
     color: #303A4B;
+    cursor: pointer;
+    transition: .5s;
 }
 
-.smart-invoicing__bg {
-    flex-basis: 55%;
-}
-
-.smart-invoicing__bg img{
-    width: 100%;
+.smart-invoicing__register-button:hover {
+    background: #303A4B;
+    color: #fff;
 }
 
 .professional-invoices-delivered{
-    padding-bottom: 85px;
+    padding-top: 43px;
+    padding-bottom: 60px;
 }
 
 .professional-invoices-delivered__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 49px;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
     color: #303A4B;
 }
@@ -429,17 +424,13 @@ section {
     max-height: 30px;
 }
 
-.benefit__item img {
-    max-height: 30px;
-}
-
 .benefit__paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
     color: #303A4B;
-    margin-left: 23px;
+    margin-left: 19px;
 }
 
 .block-professional-invoice__img {
@@ -448,7 +439,7 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 90px auto 0;
-    max-width: 1185px;
+    max-width: 789px;
     
 }
 
@@ -457,25 +448,19 @@ section {
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-height: 515px;
     
 }
 
-.block-professional-invoice__img .third-invoice img,
-.block-professional-invoice__img .second-invoice img,
-.block-professional-invoice__img .first-invoice img{
-    max-height: 515px;
-}
-
 .invoicing-options {
-    padding-top: 85px;
+    padding-top: 60px;
+    padding-bottom: 32px;
 }
 
 .invoicing-options__title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
     color: #303A4B;
 }
@@ -488,25 +473,26 @@ section {
 }
 
 .invoicing-options__block {
-    flex-basis: 24%;
+    flex-basis: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 }
 
 .invoicing-options__block img {
-    max-height: 60px;
+    max-height: 62px;
 }
 
 .option__title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
     text-align: center;
     color: #303A4B;
-    margin-top: 15px;
     position: relative;
+    max-width: 203px;
+    margin: 15px auto 0;
 }
 
 .option__title::after {
@@ -524,15 +510,15 @@ section {
 .option__paragraph {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
     text-align: center;
     color: #676767;
     margin-top: 39px;
 }
 
 .about-application {
-    padding-top: 30px;
+    padding-top: 47px;
     padding-bottom: 70px;
 }
 
@@ -566,11 +552,11 @@ section {
 
 .merit__title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 24px;
     color: #303A4B;
-    margin-bottom: 23px;
+    margin-bottom: 7px;
 }
 
 .about-application__description .about-application__merit:last-child .merit__title {
@@ -580,13 +566,13 @@ section {
 .merit__paragraph {
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 25px;
     color: #676767;
 }
 
 .save {
-    background: #FDC740;
+    background: #FFD058;
     padding: 40px 0;
 }
 
@@ -599,8 +585,8 @@ section {
 .save__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 37px;
+    font-size: 25px;
+    line-height: 30px;
     color: #FFFFFF;
 }
 
@@ -609,13 +595,20 @@ section {
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
-    padding: 12px 50px;
+    padding: 12px 25px;
     background: transparent;
     margin-left: 54px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.save__button-sign-up:hover {
+    background: #fff;
+    color: #FFD058;
 }
 
 .invoices {
@@ -626,8 +619,8 @@ section {
 .invoices__title{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 49px;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -643,8 +636,6 @@ section {
     padding-left: 50px;
 }
 
-
-
 .invoices__block {
     flex-basis: 27%;
     display: flex;
@@ -654,8 +645,8 @@ section {
 
 .invoices__block-paragraph {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 18px;
     font-family: 'Montserrat', sans-serif;
     color: #303A4B;
     margin-left: 16px;
@@ -701,6 +692,331 @@ section {
     margin-left: 45px;
 }
 
-@media (min-width: 962px) and (max-width: 1210px) {
+@media (max-width: 980px) {
+    .header__content {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header__navigation {
+        margin: 0;
+        order: 2;
+    }
+
+    .header__button-sing-in {
+        margin-bottom: 10px;
+        order: 1;
+    }
+
+    .smart-invoicing {
+        padding-top: 125px;
+    }
+
+    .smart-invoicing__content {
+        flex-direction: column;
+    }
+
+    .smart-invoicing__description {
+        order: 2;
+        margin-top: 20px;
+    }
+    .smart-invoicing__bg {
+        order: 1;
+    }
+
+    .benefits-of-professional-accounts {
+        flex-wrap: wrap;
+    }
+
+    .benefit__item {
+        flex-basis: 45%;
+    }
+
+    .benefit__item div {
+        min-width: 73px;
+        text-align: center;
+    }
+
+    .benefits-of-professional-accounts .benefit__item:nth-child(n+3) {
+        margin-top: 30px;
+    }
+
+    .second-invoice {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+    }
+    .block-professional-invoice__img .third-invoice {
+        top: 70%;
+        left: 67%;
+    }
+
+    .invoicing-options__content {
+        flex-direction: column;
+    }
+
+    .invoicing-options__content .invoicing-options__block:not(:nth-child(3)) {
+        margin-bottom: 30px;
+    }
+
+    .invoices {
+        padding-bottom: 30px;
+    }
+
+    .invoices__block{
+        flex-basis: 43%;
+    }
+
+    .invoices__content .invoices__block:nth-child(3n+3) {
+        padding-left: 0;
+    }
+
+    .about-application {
+        padding-top: 30px;
+    }
+
+    .about-application__content {
+        flex-direction: column;
+    }
+
+    .about-application__bg {
+        margin-bottom: 20px;
+    }
+
+    .merit__title, .merit__paragraph {
+        text-align: center;
+    }
+
+    .save__content {
+        flex-direction: column;
+    }
+    .save__button-sign-up {
+        margin-top: 20px;
+    }
+
+    .footer .wrapper {
+        flex-direction: column;
+    }
+
+    .footer__navigation{
+        order: 1;
+        
+    }
+
+    .footer-description {
+        order: 2;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+
+
+    .footer-span{
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 680px) {
+    .header{
+        width: 100%;
+    }
+    .wrapper {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .header__navigation {
+        visibility: hidden;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100vw;
+        background-color:rgba(255,255,255,.5);
+        -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     
+    }
+    .header .navigation__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 70%;
+        background: #fff;
+        margin-left: auto;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation__list .list__item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .header__navigation .submenu {
+        padding: 0;
+        position: absolute;
+        box-shadow: none;
+        top: 30px;
+        width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        max-width: 300px;
+        margin-left: 40px;
+    }
+
+    .header__navigation  ul li .submenu a:first-child,
+    .header__navigation  ul li .submenu a:nth-child(2),
+    .header__navigation  ul li .submenu a:nth-child(3),
+    .header__navigation  ul li .submenu a:nth-child(4),
+    .header__navigation  ul li .submenu a:last-child  {
+        background: none;
+        padding: 0;
+        margin-bottom: 20px;
+        max-width: 220px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .header__navigation  ul li .submenu a:first-child:active,
+    .header__navigation  ul li .submenu a:nth-child(2):active,
+    .header__navigation  ul li .submenu a:nth-child(3):active,
+    .header__navigation  ul li .submenu a:nth-child(4):active,
+    .header__navigation  ul li .submenu a:last-child:active {
+        background: none;
+    }
+    .header__navigation .submenu a:first-child:hover,
+    .header__navigation .submenu a:nth-child(2):hover,
+    .header__navigation .submenu a:nth-child(3):hover,
+    .header__navigation .submenu a:nth-child(4):hover,
+    .header__navigation .submenu a:last-child:hover{
+        background: none;
+    }
+
+    .header__navigation ul li:active .submenu {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header__navigation ul li:active ~ .navigation__list{
+        margin-top: -20px;
+    }
+
+    #menu__toggle, .menu__btn {
+        display: block;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .header__navigation {
+    visibility: visible;
+    right: 0;
+    }
+    #menu__toggle:checked ~ .menu__btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transform: none;
+    }
+
+    .header__content {
+        background: url(../img/logo-m.svg) no-repeat;
+        background-position-y: -10px;
+    }
+
+    .menu {
+        display: block;
+    }
+    .header__button-sing-in {
+        display: none;
+    }
+
+    .smart-invoicing {
+        padding-top: 80px;
+    }
+
+    .smart-invoicing__content {
+        text-align: center;
+    }
+
+    .smart-invoicing__bg {
+        display: none;
+    }
+
+    .benefits-of-professional-accounts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefits-of-professional-accounts .benefit__item {
+        margin-top: 30px;
+    }
+
+    .second-invoice, .third-invoice {
+        display: none;
+    }
+
+    .block-professional-invoice__img{
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .first-invoice  img{
+        width: 100%;
+    }
+
+    .professional-invoices-delivered {
+        padding-bottom: 30px;
+    }
+
+    .invoicing-options {
+        padding-top: 30px;
+    }
+
+    .invoices__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-application__bg img{
+        width: 100%;
+    }
+
+    .save__content {
+        text-align: center;
+    }
+
+    .save__title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .save__button-sign-up {
+        margin-left: 0;
+    }
+
+    .footer__navigation .navigation__list {
+        flex-direction: column;
+    }
+
+    .footer__navigation .navigation__list .footer-list__item {
+        margin: 0 0 15px;
+        text-align: center;
+    }
 }
