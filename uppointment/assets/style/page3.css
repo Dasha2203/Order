@@ -795,10 +795,14 @@ section {
     width: 100%;
 }
 
+
+
 .method {
     max-height: 25px;
-    max-height: 25px;
     
+}
+.methods .method:nth-child(5) {
+    margin-top: 7px;
 }
 
 .arrow-left, .arrow-right {
@@ -1275,7 +1279,7 @@ margin-bottom: 50px;
         width: 70%;
         position: relative;
         height: 50px;
-    overflow: hidden;
+        overflow: hidden;
     }
     .method {
         display: none;
@@ -1284,6 +1288,10 @@ margin-bottom: 50px;
         text-align: center;
         height: 100%;
         width: 100%;
+    }
+
+    .methods .method:nth-child(5) {
+        margin-top: auto;
     }
 
     .active, .next {
