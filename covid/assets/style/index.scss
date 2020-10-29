@@ -1,0 +1,300 @@
+$color-text: #000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.wrapper {
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__navigation {
+        margin-left: auto;
+        margin-right: 17px;
+        .navigation__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 795px;
+
+            .list__link {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $color-text;
+
+            }
+           
+        }
+    }
+
+    .button-sing-in {
+        background: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
+.preview {
+    height: 100vh;
+    background: url('../img/preview__bg.png') no-repeat;
+    background-position: center;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+    }
+
+    .preview__content {
+        max-width: 632px;
+
+        .preview__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 49px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+
+        .preview__description {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        .schedule-button {
+            border: none;
+            background: #6CD3AE;
+            border-radius: 10px;
+            padding: 21px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #fff;
+        }
+    }
+}
+
+.home-defenders {
+    padding: 50px 0;
+
+    .home-defenders__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    .home-defenders__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        /* identical to box height */
+        text-align: center;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+
+    .home-defenders__description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $color-text;
+    }
+}
+
+.how-it-works {
+    background: rgba(196, 196, 196, 0.3);
+    padding: 50px 0;
+
+    .how-it-works__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        color: #000000;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .steps-help {
+        display: flex;
+        justify-content: space-between;
+
+        .step:first-child .step__content::after {
+            content:"Step 1";
+            position: absolute;
+            top: -23px;
+            left: 25px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #4C957A;
+            border-radius: 30px;
+            padding: 8px 37px;
+        }
+
+        .step:nth-child(2) .step__content::after {
+            content:"Step 2";
+            position: absolute;
+            top: -23px;
+            left: 25px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #4C957A;
+            border-radius: 30px;
+            padding: 8px 37px;
+        }
+
+        .step:last-child .step__content::after {
+            content:"Step 3";
+            position: absolute;
+            top: -23px;
+            left: 25px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #4C957A;
+            border-radius: 30px;
+            padding: 8px 37px;
+        }
+    }
+    .step {
+        flex-basis: 30%;
+        
+
+        
+    }
+
+    .step__img {
+        max-height: 285px;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .step__content {
+        background: #fff;
+        padding: 45px 30px;
+        border: 2px solid #4C957A;
+        position: relative;
+
+        .step__title {
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            color: #000000;
+        }
+
+        .step__description {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+}
+
+.consult {
+    padding: 63px 0;
+    background: url('../img/consult__bg.png') no-repeat;
+    background-position: center;
+    .consult__content {
+        text-align: center;
+    }
+    .consult__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+
+    .consult__description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+    .schedule-button {
+        border: none;
+        background: #6CD3AE;
+        border-radius: 10px;
+        padding: 21px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
