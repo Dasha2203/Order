@@ -113,235 +113,78 @@ html {
   cursor: pointer;
 }
 
-.preview {
+.register {
   padding-top: 101px;
-  height: 100vh;
-  background: url("../img/preview__bg.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-clip: content-box;
-  background-origin: content-box;
-  box-sizing: border-box;
+  padding-bottom: 30px;
+  text-align: center;
 }
-.preview .wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
-.preview .preview__content {
-  max-width: 632px;
-}
-.preview .preview__content .preview__title {
+.register .register__title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.register .register__form {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 420px;
+}
+.register .register__form input {
+  background: #FFFFFF;
+  border: 2px solid #868686;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #868686;
+  font-size: 22px;
+  width: 100%;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.register .register__form p {
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(129, 129, 129, 0.7);
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 15px;
 }
-.preview .preview__content .preview__description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.preview .preview__content .schedule-button {
-  border: none;
-  background: #6CD3AE;
-  border-radius: 10px;
-  padding: 21px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.3s;
-}
-.preview .preview__content .schedule-button:hover {
-  background: #4C957A;
-}
-
-.home-defenders {
-  padding: 50px 0;
-}
-.home-defenders .home-defenders__subtitle {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 30px;
-}
-.home-defenders .home-defenders__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 37px;
-  /* identical to box height */
-  text-align: center;
-  color: #000000;
-  margin-bottom: 25px;
-}
-.home-defenders .home-defenders__description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #000;
-}
-
-.how-it-works {
-  background: rgba(196, 196, 196, 0.3);
-  padding: 50px 0;
-}
-.how-it-works .how-it-works__subtitle {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 30px;
-}
-.how-it-works .how-it-works__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 37px;
-  color: #000000;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.how-it-works .steps-help {
+.register .register__form div {
   display: flex;
   justify-content: space-between;
-  position: relative;
-}
-.how-it-works .steps-help .step:first-child .step__content::after {
-  content: "Step 1";
-  position: absolute;
-  top: -23px;
-  left: 25px;
-  border: 5px solid #fff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  background: #4C957A;
-  border-radius: 30px;
-  padding: 8px 37px;
-}
-.how-it-works .steps-help .step:nth-child(2) .step__content::after {
-  content: "Step 2";
-  position: absolute;
-  top: -23px;
-  left: 25px;
-  border: 5px solid #fff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  background: #4C957A;
-  border-radius: 30px;
-  padding: 8px 37px;
-}
-.how-it-works .steps-help .step:last-child .step__content::after {
-  content: "Step 3";
-  position: absolute;
-  border: 5px solid #fff;
-  top: -23px;
-  left: 25px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  background: #4C957A;
-  border-radius: 30px;
-  padding: 8px 37px;
-}
-.how-it-works .step {
-  flex-basis: 30%;
-}
-.how-it-works .step__img {
-  max-height: 285px;
   width: 100%;
 }
-.how-it-works .step__img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.how-it-works .step__content {
-  background: #fff;
-  padding: 45px 30px;
-  border: 2px solid #4C957A;
-  position: relative;
-  min-height: 600px;
-}
-.how-it-works .step__content .step__title {
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
-}
-.how-it-works .step__content .step__description {
+.register .register__form div a {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.7);
 }
-
-.consult {
-  padding: 63px 0;
-  background: url("../img/consult__bg.png") no-repeat;
-  background-position: center;
-}
-.consult .consult__content {
-  text-align: center;
-}
-.consult .consult__title {
+.register .register__form .sing-in {
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 25px;
-}
-.consult .consult__description {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
   color: #FFFFFF;
-  margin-bottom: 25px;
-}
-.consult .schedule-button {
-  border: none;
   background: #6CD3AE;
   border-radius: 10px;
-  padding: 21px;
+  border: none;
+  padding: 21px 127px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.register .register {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.consult .schedule-button:hover {
-  background: #4C957A;
+  color: #000000;
 }
 
 .footer {
@@ -474,55 +317,6 @@ html {
   z-index: -1;
 }
 
-@media (max-width: 1439px) {
-  .how-it-works .steps-help {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .how-it-works .steps-help .step {
-    flex-basis: 45%;
-    margin-bottom: 20px;
-  }
-  .how-it-works .steps-help .step:first-child {
-    margin-right: 30px;
-  }
-  .how-it-works .steps-help .step .step__img {
-    height: 350px;
-  }
-  .how-it-works .steps-help .step .step__img img {
-    object-fit: fill;
-  }
-  .how-it-works .step__content {
-    padding: 30px 10px;
-    min-height: 10px;
-  }
-  .how-it-works .step__content .step__title {
-    font-size: 18px;
-    text-align: center;
-  }
-  .how-it-works .step__content .step__description {
-    font-size: 14px;
-    text-align: center;
-  }
-}
-@media (max-width: 1000px) {
-  .how-it-works .steps-help {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .how-it-works .steps-help .step {
-    flex-basis: 70%;
-    margin-bottom: 20px;
-  }
-  .how-it-works .steps-help .step .step__img {
-    height: 350px;
-  }
-  .how-it-works .steps-help .step .step__img img {
-    object-fit: fill;
-  }
-}
 @media (min-width: 768px) and (max-width: 1439px) {
   .logo {
     max-width: 105px;
@@ -550,48 +344,33 @@ html {
     margin-right: 0;
   }
 
-  .preview .preview__content .preview__title {
-    font-size: 30px;
-    line-height: 37px;
-  }
-  .preview .preview__content .preview__description {
-    font-size: 16px;
-  }
-  .preview .preview__content .schedule-button {
-    font-size: 16px;
-  }
-
-  .how-it-works .how-it-works__subtitle {
-    margin-bottom: 15px;
-  }
-  .how-it-works .step:first-child {
-    margin-right: 0;
-  }
-  .how-it-works .step__content {
-    padding: 30px 10px;
-    min-height: 10px;
-  }
-  .how-it-works .step__content .step__title {
-    font-size: 18px;
-    text-align: center;
-  }
-  .how-it-works .step__content .step__description {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .consult {
-    padding: 38px 0;
-    background-size: cover;
-  }
-  .consult .consult__title {
+  .register .register__title {
     font-size: 24px;
   }
-  .consult .consult__description {
-    font-size: 16px;
+  .register .register__form {
+    max-width: 380px;
   }
-  .consult .schedule-button {
-    font-size: 16px;
+  .register .register__form input {
+    font-size: 18px;
+  }
+  .register .register__form p {
+    font-size: 18px;
+  }
+  .register .register__form div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .register .register__form div a {
+    font-size: 18px;
+  }
+  .register .register__form .sing-in {
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .register .register {
+    font-size: 18px;
   }
 
   .footer {
@@ -705,115 +484,35 @@ html {
     right: 0;
   }
 
-  .preview {
-    padding-top: 86px;
-  }
-  .preview .preview__content {
-    text-align: center;
-  }
-  .preview .preview__content .preview__title {
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-  }
-  .preview .preview__content .preview__description {
-    text-align: center;
-    font-size: 18px;
-  }
-  .preview .preview__content .schedule-button {
-    font-size: 18px;
-    padding: 17px 13px;
-  }
-
-  .home-defenders {
-    padding: 30px 0;
-  }
-  .home-defenders .home-defenders__content .home-defenders__subtitle {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  .home-defenders .home-defenders__content .home-defenders__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-  .home-defenders .home-defenders__content .home-defenders__description {
-    font-size: 16px;
-  }
-
-  .how-it-works {
-    padding: 30px 0;
-  }
-  .how-it-works .how-it-works__content .how-it-works__subtitle {
-    margin-bottom: 10px;
-  }
-  .how-it-works .how-it-works__content .how-it-works__title {
+  .register .register__title {
     font-size: 24px;
-    line-height: 30px;
   }
-  .how-it-works .how-it-works__content .steps-help {
-    flex-wrap: wrap;
-    justify-content: center;
+  .register .register__form {
+    max-width: 280px;
   }
-  .how-it-works .how-it-works__content .steps-help .step {
-    flex-basis: 90%;
-    margin-bottom: 15px;
-  }
-  .how-it-works .how-it-works__content .steps-help .step:first-child {
-    margin-right: 0;
-  }
-  .how-it-works .how-it-works__content .steps-help .step:first-child .step__content::after {
-    left: 7px;
-    top: -20px;
-    padding: 3px 27px;
+  .register .register__form input {
     font-size: 16px;
   }
-  .how-it-works .how-it-works__content .steps-help .step:nth-child(2) .step__content::after {
-    left: 7px;
-    top: -20px;
-    padding: 3px 27px;
+  .register .register__form p {
     font-size: 16px;
   }
-  .how-it-works .how-it-works__content .steps-help .step:last-child .step__content::after {
-    left: 7px;
-    top: -20px;
-    padding: 3px 27px;
+  .register .register__form div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .register .register__form div a {
     font-size: 16px;
   }
-  .how-it-works .how-it-works__content .steps-help .step .step__img {
-    height: 180px;
-  }
-  .how-it-works .how-it-works__content .steps-help .step .step__img img {
-    object-fit: fill;
-  }
-  .how-it-works .how-it-works__content .steps-help .step .step__content {
-    padding: 20px 5px;
-    min-height: 10px;
-  }
-  .how-it-works .how-it-works__content .steps-help .step .step__content .step__title {
+  .register .register__form .sing-in {
     font-size: 18px;
-    line-height: 20px;
-    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 10px 98px;
+    width: 100%;
   }
-  .how-it-works .how-it-works__content .steps-help .step .step__content .step__description {
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-  }
-
-  .consult {
-    padding: 10px 0;
-  }
-  .consult .consult__content .consult__title {
-    font-size: 22px;
-    line-height: 25px;
-  }
-  .consult .consult__content .consult__description {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .consult .consult__content .schedule-button {
-    font-size: 14px;
-    padding: 17px 13px;
+  .register .register {
+    font-size: 18px;
   }
 
   .footer {

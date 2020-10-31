@@ -9,16 +9,13 @@ $color-text: #000;
     font-family: 'Montserrat', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 .wrapper {
     max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
-    position: relative;
 }
 
 .header {
@@ -122,12 +119,10 @@ html {
     }
 }
 
-
-.preview {
+.foreclosure-preview {
     padding-top: 101px;
     height: 100vh;
-    background: url('../img/preview__bg.png') no-repeat;
-    background-position: center;
+    background: url('../img/fpreclosure__bg.png') no-repeat;
     background-size: cover;
     background-clip: content-box;
     background-origin: content-box;
@@ -135,67 +130,150 @@ html {
 
     .wrapper {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
         height: 100%;
-
     }
 
-    .preview__content {
-        max-width: 632px;
+    .foreclosure-preview__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .preview__title {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-        }
+    .foreclosure-preview__description {
+        max-width: 702px;
+    }
 
-        .preview__description {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            margin-bottom: 30px;
-        }
+    .foreclosure-preview__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
 
-        .schedule-button {
-            border: none;
-            background: #6CD3AE;
-            border-radius: 10px;
-            padding: 21px;
+    .foreclosure-preview__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+    .foreclosure-preview__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-top: 25px;
+    }
+
+    .foreclosure-preview__form-consultation {
+        box-sizing: border-box;
+        padding: 30px 16px 30px 24px;
+        background: rgba(96, 200, 162, 0.8);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 454px;
+        width: 100%;
+    }
+
+    .form-consultation__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .form-consultation__subtitle  {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .form-consultation__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #E3E1E1;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-consultation__input {
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        margin-bottom: 25px;
+
+        &::placeholder {
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
-            cursor:pointer;
-            color: #fff;
-            transition: all .3s;
+            color: rgba(129, 129, 129, 0.7);
+            text-transform: capitalize;
+        }
+    }
+
+    .form__list {
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(129, 129, 129, 0.7);
+        position: relative;
+
+        
+    }
+
+    .form-consultation__button {
+        background: #76ECC1;
+        border-radius: 10px;
+        padding: 21px 138px;
+        border: none;
+        margin-top: 28px;
+        cursor:pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+
+        transition: all .3s;
 
             &:hover {
                 background: #4C957A;
             }
-        }
+
     }
 }
 
-.home-defenders {
+.second-block {
     padding: 50px 0;
 
-    .home-defenders__subtitle {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 30px;
-    }
-
-    .home-defenders__title {
+    .second-block__title {
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -206,7 +284,7 @@ html {
         margin-bottom: 25px;
     }
 
-    .home-defenders__description {
+    .second-block__description {
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -217,8 +295,8 @@ html {
 }
 
 .how-it-works {
-    background: rgba(196, 196, 196, 0.3);
     padding: 50px 0;
+
 
     .how-it-works__subtitle {
         font-style: normal;
@@ -236,102 +314,158 @@ html {
         font-size: 30px;
         line-height: 37px;
         color: #000000;
-        margin-bottom: 20px;
+        margin-bottom: 33px;
         text-align: center;
     }
 
-    .steps-help {
-        display: flex;
-        justify-content: space-between;
+    .process {
+        max-width: 578px;
         position: relative;
 
-        .step:first-child .step__content::after {
-            content:"Step 1";
-            position: absolute;
-            top: -23px;
-            left: 25px;
-            border: 5px solid #fff;
+        .process__title{
             font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-
-        .step:nth-child(2) .step__content::after {
-            content:"Step 2";
-            position: absolute;
-            top: -23px;
-            left: 25px;
-            border: 5px solid #fff;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-
-        .step:last-child .step__content::after {
-            content:"Step 3";
-            position: absolute;
-            border: 5px solid #fff;
-            top: -23px;
-            left: 25px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-    }
-    .step {
-        flex-basis: 30%;
-        
-
-        
-    }
-
-    .step__img {
-        max-height: 285px;
-        width: 100%;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .step__content {
-        background: #fff;
-        padding: 45px 30px;
-        border: 2px solid #4C957A;
-        position: relative;
-        min-height: 600px;
-
-        .step__title {
             font-weight: bold;
             font-size: 25px;
             line-height: 30px;
+            text-align: right;
             color: #000000;
         }
 
-        .step__description {
+        .process__description {
             font-style: normal;
             font-weight: normal;
             font-size: 20px;
             line-height: 24px;
+            text-align: right;
             color: #000000;
+            margin-top: 15px;
         }
     }
+
+    .process-wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        &::after {
+            content:'';
+            width: 5px;
+            height: 80%;
+            background: url('../img/dashed-line.svg');
+            background-position: top left;
+            position: absolute;
+            top: 0;
+            left: 49%;
+            transform: translateX(-50%);
+            z-index: -10;
+        }
+
+        .process:first-child::after {
+            content: '1';
+            display: block;
+            width:85px;
+            height:85px;
+            border-radius: 50%;
+            background: #4C957A;
+            position: absolute;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 43px;
+            color: #FFFFFF;
+            padding: 20px 35px;
+            box-sizing: border-box;
+            top: 0;
+            right: -15%;
+            z-index: -1;
+
+        }
+
+        .process:last-child::after {
+            content: '3';
+            display: block;
+            width:85px;
+            height:85px;
+            border-radius: 50%;
+            background: #4C957A;
+            position: absolute;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 43px;
+            color: #FFFFFF;
+            padding: 20px 35px;
+            box-sizing: border-box;
+            top: 0;
+            right: -15%;
+            z-index: -1;
+        }
+        .process:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 67px;
+            margin-bottom: 41px;
+
+            
+
+            .process__img {
+                position: relative;
+                border-radius: 50%;
+                
+                img {
+                    width: 100%;
+                    height: 100%;                
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: #4C957A;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -24px;
+                    z-index: -1;
+
+                    left:-32px;
+                }
+            }
+            .process__text {
+                max-width: 577px;
+                position: relative;
+                &::after {
+                    content: '2';
+                    display: block;
+                    width:85px;
+                    height:85px;
+                    border-radius: 50%;
+                    background: #4C957A;
+                    position: absolute;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 35px;
+                    line-height: 43px;
+                    color: #FFFFFF;
+                    padding: 20px 32px;
+                    box-sizing: border-box;
+                    top: 0;
+                    left: -14%;
+                    z-index: -1;
+                }
+
+                
+                .process__title {
+                    text-align: left;
+                } 
+                .process__description {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
 }
 
 .consult {
@@ -372,10 +506,9 @@ html {
         color: #fff;
         cursor: pointer;
         transition: all .3s;
-
-        &:hover {
-            background: #4C957A;
-        }
+            &:hover {
+                background: #4C957A;
+            }
     }
 }
 
@@ -526,74 +659,6 @@ html {
     }
 }
 
-@media (max-width: 1439px) {
-
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-
-            .step {
-                flex-basis: 45%;
-                margin-bottom: 20px;
-                &:first-child {
-                    margin-right: 30px;
-                }
-
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-
-            }
-        }
-
-        .step__content {
-            padding: 30px 10px;
-            min-height: 10px;
-
-            .step__title {
-                font-size: 18px;
-                text-align: center;
-            }
-
-            .step__description {
-                font-size: 14px;
-                text-align: center;
-            }
-        
-        }
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-    
-            .step {
-                flex-basis: 70%;
-                margin-bottom: 20px;
-    
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-    
-            }
-        }
-    }
-    
-}
-
 @media (min-width: 768px) and (max-width: 1439px) {
 
     .logo {
@@ -623,49 +688,120 @@ html {
         }
     }
 
-    .preview {
-        .preview__content {
-            .preview__title{
+    .foreclosure-preview {
+        .foreclosure-preview__description {
+            flex-basis: 48%;
+            .foreclosure-preview__title {
                 font-size: 30px;
                 line-height: 37px;
+                margin-top: 20px;
             }
 
-            .preview__description {
-                font-size: 16px;
+            .foreclosure-preview__text {
+                font-size: 18px;
             }
+        }
 
-            .schedule-button {
+        .foreclosure-preview__form-consultation {
+            flex-basis: 40%;
+            padding: 20px 10px 20px 15px;
+            .form-consultation__title {
+                font-size: 22px;
+            }
+        }
+
+        .form-consultation__input {
+            font-size: 16px;
+            margin-bottom: 10px;
+
+            &::placeholder {
                 font-size: 16px;
             }
+        }
+
+        .form__list {
+            font-size: 16px;
+
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+
+
+        .form-consultation__button {
+            padding: 10px 30px;
+            font-size: 16px;
         }
     }
 
     .how-it-works {
-        .how-it-works__subtitle {
-            margin-bottom: 15px;
-        }
-        .step {
-            &:first-child {
-                margin-right: 0;
+        .process {
+            max-width: 315px;
+            .process__title {
+                font-size: 22px;
+            }
+
+            .process__description {
+                font-size: 16px;
             }
         }
 
-        .step__content 
-        {
-            padding: 30px 10px;
-            min-height: 10px;
-            .step__title {
-                font-size: 18px;
-                text-align: center;
+        .process-wrapper {
+            
+            .process:nth-child(2) {
+                .process__text{
+                    max-width: 315px;
+                    transform: translateX(16%);
+                    &::after{
+                        width:75px;
+                        height:75px;
+                        padding: 15px 29px;
+                        left: -26%;
+                    }
+                }
+
+                .process__img {
+                    max-width: 300px;
+                    max-height: 300px;
+                    transform: translateX(-12%);
+                }
+
+                
+
+                max-width: none;
+                justify-content: center;
+                align-items: center;
+
             }
-            .step__description {
-                font-size: 14px;
-                text-align: center;
+
+            &:after {
+                height: 75%;
+                left: 50%;
             }
-        
+
+            .process:first-child{
+                margin: auto;
+                transform: translateX(-66%);
+                &::after {
+                width:75px;
+                height:75px;
+                right: -27%;
+                padding: 15px 32px;
+                }
+            }
+    
+            .process:last-child {
+                margin: auto;
+                transform: translateX(-66%);
+                &::after {
+                width:75px;
+                height:75px;
+                right: -27%;
+                padding: 15px 29px;
+                }
+            }
         }
     }
-
     .consult {
         padding: 38px 0;
         background-size: cover;
@@ -720,6 +856,7 @@ html {
         height: 45px;
     }
 }
+
 
 @media (min-width: 320px) and (max-width: 767px) {
     .logo {
@@ -811,121 +948,92 @@ html {
               }
         }
     }
-    .preview {
+
+    .foreclosure-preview {
         padding-top: 86px;
-        .preview__content {
+        
+        height: auto;
+        .foreclosure-preview__text {
+            font-size: 16px;
             text-align: center;
-            .preview__title {
-                font-size: 20px;
-                line-height: 27px;
-                text-align: center;
-            }
-
-            .preview__description {
-                text-align: center;
-                font-size: 18px;
-            }
-
-            .schedule-button {
-                font-size: 18px;
-                padding: 17px 13px;
-            }
         }
-    }
+        .foreclosure-preview__content {
+            flex-direction: column;
+            .foreclosure-preview__description {
+                .foreclosure-preview__title {
+                    font-size: 24px;
+                    line-height: 27px;
+                    text-align: center;
+                }
+    
+                .foreclosure-preview__subtitle {
+                    font-size: 18px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+    
+                
+            }
 
-    .home-defenders {
-        padding: 30px 0;
-
-        .home-defenders__content {
-
-            .home-defenders__subtitle {
-                font-size: 14px;
+            .foreclosure-preview__form-consultation {
+                padding: 6px 8px 10px 10px;
                 margin-bottom: 10px;
-            }
-            .home-defenders__title {
-                font-size: 20px;
-                line-height: 27px;
-            }
+                margin-top: 10px;
 
-            .home-defenders__description {
-                font-size: 16px;
-            }
+                .form-consultation__title {
+                    font-size: 22px;
+                }
 
+                .form-consultation__subtitle {
+                    font-size: 18px;
+                }
+
+                .form-consultation__description {
+                    margin: 10px auto;
+                }
+
+                .form-consultation__input {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+                .form__list {
+                    font-size: 14px;
+                     &::placeholder {
+                         font-size: 14px;
+                     }
+                }
+
+                .form-consultation__button {
+                    font-size: 16px;
+                    padding: 10px 20px
+                }
+            }
             
         }
     }
 
-    .how-it-works {
+    .second-block {
         padding: 30px 0;
 
-        .how-it-works__content {
-            .how-it-works__subtitle {
+        .second-block__content {
+
+            .second-blck__subtitle {
+                font-size: 14px;
                 margin-bottom: 10px;
             }
-
-            .how-it-works__title {
-                font-size: 24px;
-                line-height: 30px;
+            .second-block__title {
+                font-size: 20px;
+                line-height: 27px;
             }
 
-            .steps-help {
-                flex-wrap: wrap;
-                justify-content: center;
-                .step {
-                    flex-basis: 90%;
-                    margin-bottom: 15px;
-
-                    &:first-child {
-                        margin-right: 0;
-                    }
-
-                    &:first-child .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                    &:nth-child(2) .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                    &:last-child .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                   
-                    .step__img{
-                        height: 180px;
-                        img {
-                            object-fit: fill;
-                        }
-                    }
-
-                    .step__content {
-                        padding: 20px 5px;
-                        min-height: 10px;
-
-                        .step__title{
-                            font-size: 18px;
-                            line-height: 20px;
-                            text-align: center;
-                        }
-
-                        .step__description {
-                            font-size: 14px;
-                            line-height: 18px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
+            .second-block__description {
+                font-size: 16px;
+            }  
         }
     }
-
     .consult {
         padding: 10px 0;
         .consult__content {
@@ -942,6 +1050,49 @@ html {
             .schedule-button {
                 font-size: 14px;
                 padding: 17px 13px;
+            }
+        }
+    }
+
+    .how-it-works {
+        .how-it-works__content {
+            .process-wrapper {
+                &::after {
+                    display: none;
+                }
+                .process {
+
+                    &::after {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        .process__img {
+                            display: none;
+                        }
+
+                        .process__text {
+                            .process__title {
+                                text-align: center;
+                                font-size: 20px;
+                            }
+                            &::after{
+                                display:none;
+                            }
+                            .process__description {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .process__title {
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                    .process__description {
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }

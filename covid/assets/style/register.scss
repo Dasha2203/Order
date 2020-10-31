@@ -122,260 +122,88 @@ html {
     }
 }
 
-
-.preview {
+.register {
     padding-top: 101px;
-    height: 100vh;
-    background: url('../img/preview__bg.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-clip: content-box;
-    background-origin: content-box;
-    box-sizing: border-box;
+    padding-bottom: 30px;
+    text-align: center;
 
-    .wrapper {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
+    .register__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 40px;
 
     }
 
-    .preview__content {
-        max-width: 632px;
+    .register__form {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 420px;
 
-        .preview__title {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-        }
+        input {
 
-        .preview__description {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            margin-bottom: 30px;
-        }
-
-        .schedule-button {
-            border: none;
-            background: #6CD3AE;
+            background: #FFFFFF;
+            border: 2px solid #868686;
+            box-sizing: border-box;
             border-radius: 10px;
-            padding: 21px;
+            border:2px solid #868686;
+            font-size: 22px;
+            width: 100%;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 30px;
+
+        }
+
+        p {
+            text-align: left;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
-            cursor:pointer;
-            color: #fff;
-            transition: all .3s;
+            color: rgba(129, 129, 129, 0.7);
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 15px;
 
-            &:hover {
-                background: #4C957A;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.7);
             }
         }
-    }
-}
 
-.home-defenders {
-    padding: 50px 0;
-
-    .home-defenders__subtitle {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 30px;
-    }
-
-    .home-defenders__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 37px;
-        /* identical to box height */
-        text-align: center;
-        color: #000000;
-        margin-bottom: 25px;
-    }
-
-    .home-defenders__description {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-        color: $color-text;
-    }
-}
-
-.how-it-works {
-    background: rgba(196, 196, 196, 0.3);
-    padding: 50px 0;
-
-    .how-it-works__subtitle {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 30px;
-    }
-
-    .how-it-works__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 37px;
-        color: #000000;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .steps-help {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-
-        .step:first-child .step__content::after {
-            content:"Step 1";
-            position: absolute;
-            top: -23px;
-            left: 25px;
-            border: 5px solid #fff;
+        .sing-in {
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
             color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-
-        .step:nth-child(2) .step__content::after {
-            content:"Step 2";
-            position: absolute;
-            top: -23px;
-            left: 25px;
-            border: 5px solid #fff;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-
-        .step:last-child .step__content::after {
-            content:"Step 3";
-            position: absolute;
-            border: 5px solid #fff;
-            top: -23px;
-            left: 25px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-    }
-    .step {
-        flex-basis: 30%;
-        
-
-        
-    }
-
-    .step__img {
-        max-height: 285px;
-        width: 100%;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            background: #6CD3AE;
+            border-radius: 10px;
+            border: none;
+            padding: 21px 127px;
+            cursor: pointer;
+            margin-bottom: 40px;
         }
     }
 
-    .step__content {
-        background: #fff;
-        padding: 45px 30px;
-        border: 2px solid #4C957A;
-        position: relative;
-        min-height: 600px;
-
-        .step__title {
-            font-weight: bold;
-            font-size: 25px;
-            line-height: 30px;
-            color: #000000;
-        }
-
-        .step__description {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 24px;
-            color: #000000;
-        }
-    }
-}
-
-.consult {
-    padding: 63px 0;
-    background: url('../img/consult__bg.png') no-repeat;
-    background-position: center;
-    .consult__content {
-        text-align: center;
-    }
-    .consult__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 37px;
-        text-align: center;
-        color: #FFFFFF;
-        margin-bottom: 25px;
-    }
-
-    .consult__description {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-        color: #FFFFFF;
-        margin-bottom: 25px;
-    }
-    .schedule-button {
-        border: none;
-        background: #6CD3AE;
-        border-radius: 10px;
-        padding: 21px;
+    .register {
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
-        color: #fff;
-        cursor: pointer;
-        transition: all .3s;
-
-        &:hover {
-            background: #4C957A;
-        }
+        color: #000000;        
     }
 }
 
@@ -460,6 +288,8 @@ html {
 
                 }
             }
+
+            
         }
 
         .block-menu {
@@ -526,74 +356,6 @@ html {
     }
 }
 
-@media (max-width: 1439px) {
-
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-
-            .step {
-                flex-basis: 45%;
-                margin-bottom: 20px;
-                &:first-child {
-                    margin-right: 30px;
-                }
-
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-
-            }
-        }
-
-        .step__content {
-            padding: 30px 10px;
-            min-height: 10px;
-
-            .step__title {
-                font-size: 18px;
-                text-align: center;
-            }
-
-            .step__description {
-                font-size: 14px;
-                text-align: center;
-            }
-        
-        }
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-    
-            .step {
-                flex-basis: 70%;
-                margin-bottom: 20px;
-    
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-    
-            }
-        }
-    }
-    
-}
-
 @media (min-width: 768px) and (max-width: 1439px) {
 
     .logo {
@@ -623,63 +385,42 @@ html {
         }
     }
 
-    .preview {
-        .preview__content {
-            .preview__title{
-                font-size: 30px;
-                line-height: 37px;
-            }
-
-            .preview__description {
-                font-size: 16px;
-            }
-
-            .schedule-button {
-                font-size: 16px;
-            }
-        }
-    }
-
-    .how-it-works {
-        .how-it-works__subtitle {
-            margin-bottom: 15px;
-        }
-        .step {
-            &:first-child {
-                margin-right: 0;
-            }
-        }
-
-        .step__content 
-        {
-            padding: 30px 10px;
-            min-height: 10px;
-            .step__title {
-                font-size: 18px;
-                text-align: center;
-            }
-            .step__description {
-                font-size: 14px;
-                text-align: center;
-            }
-        
-        }
-    }
-
-    .consult {
-        padding: 38px 0;
-        background-size: cover;
-
-        .consult__title {
+    .register {
+        .register__title {
             font-size: 24px;
         }
 
-        .consult__description {
-            font-size: 16px;
+        .register__form {
+            max-width: 380px;
+
+            input {
+                font-size: 18px;
+    
+            }
+    
+            p {
+                font-size: 18px;
+    
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+    
+                a {
+                    font-size: 18px;
+                }
+            }
+    
+            .sing-in {
+                font-size: 18px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
         }
 
-        .schedule-button {
-            font-size: 16px;
+        .register {
+            font-size: 18px;
         }
     }
 
@@ -811,138 +552,45 @@ html {
               }
         }
     }
-    .preview {
-        padding-top: 86px;
-        .preview__content {
-            text-align: center;
-            .preview__title {
-                font-size: 20px;
-                line-height: 27px;
-                text-align: center;
-            }
 
-            .preview__description {
-                text-align: center;
-                font-size: 18px;
-            }
-
-            .schedule-button {
-                font-size: 18px;
-                padding: 17px 13px;
-            }
+    .register {
+        .register__title {
+            font-size: 24px;
         }
-    }
 
-    .home-defenders {
-        padding: 30px 0;
+        .register__form {
+            max-width: 280px;
 
-        .home-defenders__content {
-
-            .home-defenders__subtitle {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-            .home-defenders__title {
-                font-size: 20px;
-                line-height: 27px;
-            }
-
-            .home-defenders__description {
+            input {
                 font-size: 16px;
+    
             }
-
-            
-        }
-    }
-
-    .how-it-works {
-        padding: 30px 0;
-
-        .how-it-works__content {
-            .how-it-works__subtitle {
-                margin-bottom: 10px;
+    
+            p {
+                font-size: 16px;
+    
             }
-
-            .how-it-works__title {
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            .steps-help {
-                flex-wrap: wrap;
-                justify-content: center;
-                .step {
-                    flex-basis: 90%;
-                    margin-bottom: 15px;
-
-                    &:first-child {
-                        margin-right: 0;
-                    }
-
-                    &:first-child .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                    &:nth-child(2) .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                    &:last-child .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                   
-                    .step__img{
-                        height: 180px;
-                        img {
-                            object-fit: fill;
-                        }
-                    }
-
-                    .step__content {
-                        padding: 20px 5px;
-                        min-height: 10px;
-
-                        .step__title{
-                            font-size: 18px;
-                            line-height: 20px;
-                            text-align: center;
-                        }
-
-                        .step__description {
-                            font-size: 14px;
-                            line-height: 18px;
-                            text-align: center;
-                        }
-                    }
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+    
+                a {
+                    font-size: 16px;
                 }
             }
+    
+            .sing-in {
+                font-size: 18px;
+                cursor: pointer;
+                margin-bottom: 30px;
+                padding: 10px 98px;
+                width: 100%;
+            }
         }
-    }
 
-    .consult {
-        padding: 10px 0;
-        .consult__content {
-            .consult__title {
-                font-size: 22px;
-                line-height: 25px;
-            }
-
-            .consult__description {
-                font-size: 14px;
-                line-height: 18px;
-            }
-
-            .schedule-button {
-                font-size: 14px;
-                padding: 17px 13px;
-            }
+        .register {
+            font-size: 18px;
         }
     }
 

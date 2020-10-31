@@ -3,22 +3,19 @@ $color-text: #000;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: 0;
     text-decoration: none;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 .wrapper {
     max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
-    position: relative;
 }
 
 .header {
@@ -122,69 +119,36 @@ html {
     }
 }
 
-
-.preview {
+.about-preview {
     padding-top: 101px;
-    height: 100vh;
-    background: url('../img/preview__bg.png') no-repeat;
-    background-position: center;
+    background: url('../img/about__bg.png') no-repeat;
     background-size: cover;
     background-clip: content-box;
     background-origin: content-box;
     box-sizing: border-box;
-
-    .wrapper {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-
-    }
-
-    .preview__content {
-        max-width: 632px;
-
-        .preview__title {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-        }
-
-        .preview__description {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            margin-bottom: 30px;
-        }
-
-        .schedule-button {
-            border: none;
-            background: #6CD3AE;
-            border-radius: 10px;
-            padding: 21px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            cursor:pointer;
-            color: #fff;
-            transition: all .3s;
-
-            &:hover {
-                background: #4C957A;
-            }
-        }
+    min-height: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about-preview__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: capitalize;
+        
     }
 }
 
 .home-defenders {
     padding: 50px 0;
 
+
+    .home-defenders__content {
+        text-align: center;
+    }
     .home-defenders__subtitle {
         font-style: normal;
         font-weight: normal;
@@ -214,152 +178,7 @@ html {
         text-align: center;
         color: $color-text;
     }
-}
 
-.how-it-works {
-    background: rgba(196, 196, 196, 0.3);
-    padding: 50px 0;
-
-    .how-it-works__subtitle {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 30px;
-    }
-
-    .how-it-works__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 37px;
-        color: #000000;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .steps-help {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-
-        .step:first-child .step__content::after {
-            content:"Step 1";
-            position: absolute;
-            top: -23px;
-            left: 25px;
-            border: 5px solid #fff;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-
-        .step:nth-child(2) .step__content::after {
-            content:"Step 2";
-            position: absolute;
-            top: -23px;
-            left: 25px;
-            border: 5px solid #fff;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-
-        .step:last-child .step__content::after {
-            content:"Step 3";
-            position: absolute;
-            border: 5px solid #fff;
-            top: -23px;
-            left: 25px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            background: #4C957A;
-            border-radius: 30px;
-            padding: 8px 37px;
-        }
-    }
-    .step {
-        flex-basis: 30%;
-        
-
-        
-    }
-
-    .step__img {
-        max-height: 285px;
-        width: 100%;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .step__content {
-        background: #fff;
-        padding: 45px 30px;
-        border: 2px solid #4C957A;
-        position: relative;
-        min-height: 600px;
-
-        .step__title {
-            font-weight: bold;
-            font-size: 25px;
-            line-height: 30px;
-            color: #000000;
-        }
-
-        .step__description {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 24px;
-            color: #000000;
-        }
-    }
-}
-
-.consult {
-    padding: 63px 0;
-    background: url('../img/consult__bg.png') no-repeat;
-    background-position: center;
-    .consult__content {
-        text-align: center;
-    }
-    .consult__title {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 37px;
-        text-align: center;
-        color: #FFFFFF;
-        margin-bottom: 25px;
-    }
-
-    .consult__description {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-        color: #FFFFFF;
-        margin-bottom: 25px;
-    }
     .schedule-button {
         border: none;
         background: #6CD3AE;
@@ -371,11 +190,177 @@ html {
         line-height: 24px;
         color: #fff;
         cursor: pointer;
-        transition: all .3s;
+        margin-top: 15px;
+    }
 
-        &:hover {
-            background: #4C957A;
+}
+
+.get-started {
+    padding: 20px 0;
+
+    .get-started__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .get-started__description {
+        max-width: 650px;
+    }
+
+    .get-started__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+    }
+
+    .get-started__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        color: #000000;
+        margin-top: 30px;
+
+        span {
+            color: #6CD3AE;
         }
+    }
+
+    .get-started__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-top: 25px;
+    }
+
+    .get-started__information {
+        margin-top: 15px;
+    }
+
+    .information__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .information__item {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 19px;
+        }
+        margin-bottom: 11px;
+    }
+
+    .call-now {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        border: none;
+        padding: 21px 51px;
+        background: #6CD3AE;
+        border-radius: 10px;
+    }
+
+
+    .foreclosure-preview__form-consultation {
+        box-sizing: border-box;
+        padding: 30px 16px 30px 24px;
+        background: rgba(96, 200, 162, 0.8);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 454px;
+        width: 100%;
+    }
+
+    .form-consultation__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .form-consultation__subtitle  {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .form-consultation__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #E3E1E1;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-consultation__input {
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        margin-bottom: 25px;
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(129, 129, 129, 0.7);
+            text-transform: capitalize;
+        }
+    }
+
+    .form__list {
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(129, 129, 129, 0.7);
+    }
+
+    .form-consultation__button {
+        background: #76ECC1;
+        border-radius: 10px;
+        padding: 21px 140px;
+        border: none;
+        margin-top: 28px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+
     }
 }
 
@@ -526,73 +511,6 @@ html {
     }
 }
 
-@media (max-width: 1439px) {
-
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-
-            .step {
-                flex-basis: 45%;
-                margin-bottom: 20px;
-                &:first-child {
-                    margin-right: 30px;
-                }
-
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-
-            }
-        }
-
-        .step__content {
-            padding: 30px 10px;
-            min-height: 10px;
-
-            .step__title {
-                font-size: 18px;
-                text-align: center;
-            }
-
-            .step__description {
-                font-size: 14px;
-                text-align: center;
-            }
-        
-        }
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-    
-            .step {
-                flex-basis: 70%;
-                margin-bottom: 20px;
-    
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-    
-            }
-        }
-    }
-    
-}
 
 @media (min-width: 768px) and (max-width: 1439px) {
 
@@ -623,66 +541,133 @@ html {
         }
     }
 
-    .preview {
-        .preview__content {
-            .preview__title{
-                font-size: 30px;
-                line-height: 37px;
-            }
-
-            .preview__description {
-                font-size: 16px;
-            }
-
-            .schedule-button {
-                font-size: 16px;
-            }
-        }
+    .about-preview {
+        min-height: 220px;
     }
 
-    .how-it-works {
-        .how-it-works__subtitle {
-            margin-bottom: 15px;
-        }
-        .step {
-            &:first-child {
-                margin-right: 0;
-            }
-        }
-
-        .step__content 
-        {
-            padding: 30px 10px;
-            min-height: 10px;
-            .step__title {
-                font-size: 18px;
-                text-align: center;
-            }
-            .step__description {
-                font-size: 14px;
-                text-align: center;
-            }
-        
-        }
-    }
-
-    .consult {
-        padding: 38px 0;
-        background-size: cover;
-
-        .consult__title {
-            font-size: 24px;
-        }
-
-        .consult__description {
-            font-size: 16px;
+    .home-defenders {
+        .home-defenders__description {
+            font-size: 18px;
         }
 
         .schedule-button {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
+    .get-started {
+
+        
+        .get-started__description {
+            max-width: none;
+            flex-basis: 45%;
+            position: relative;
+            
+
+            .get-started__title {
+                font-size: 24px;
+                margin-top: 15px;
+            }
+
+            .get-started__text {
+                font-size: 16px;
+            }
+        }
+
+        .foreclosure-preview__form-consultation {
+            flex-basis: 45%;
+            width: 40%;
+        }
+
+        .form-consultation__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+    
+        .form-consultation__subtitle  {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    
+        .form-consultation__description {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #E3E1E1;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+    
+        .form-consultation__input {
+            background: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: none;
+            padding: 16px 12px 12px;
+            margin-bottom: 10px;
+            font-size: 16px;
+    
+            &::placeholder {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(129, 129, 129, 0.7);
+                text-transform: capitalize;
+            }
+        }
+    
+        .form__list {
+            background: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: none;
+            padding: 16px 12px 12px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(129, 129, 129, 0.7);
+            position: relative;
+            font-size: 16px;
+    
+            
+        }
+    
+        .form-consultation__button {
+            background: #76ECC1;
+            border-radius: 10px;
+            padding: 13px 60px;
+            border: none;
+            margin-top: 28px;
+            cursor:pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+    
+            transition: all .3s;
+    
+                &:hover {
+                    background: #4C957A;
+                }
+    
+        }
+    }
     .footer {
         padding-bottom: 30px;
         .footer__register{
@@ -811,27 +796,6 @@ html {
               }
         }
     }
-    .preview {
-        padding-top: 86px;
-        .preview__content {
-            text-align: center;
-            .preview__title {
-                font-size: 20px;
-                line-height: 27px;
-                text-align: center;
-            }
-
-            .preview__description {
-                text-align: center;
-                font-size: 18px;
-            }
-
-            .schedule-button {
-                font-size: 18px;
-                padding: 17px 13px;
-            }
-        }
-    }
 
     .home-defenders {
         padding: 30px 0;
@@ -851,94 +815,6 @@ html {
                 font-size: 16px;
             }
 
-            
-        }
-    }
-
-    .how-it-works {
-        padding: 30px 0;
-
-        .how-it-works__content {
-            .how-it-works__subtitle {
-                margin-bottom: 10px;
-            }
-
-            .how-it-works__title {
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            .steps-help {
-                flex-wrap: wrap;
-                justify-content: center;
-                .step {
-                    flex-basis: 90%;
-                    margin-bottom: 15px;
-
-                    &:first-child {
-                        margin-right: 0;
-                    }
-
-                    &:first-child .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                    &:nth-child(2) .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                    &:last-child .step__content::after {
-                        left: 7px;
-                        top: -20px;
-                        padding: 3px 27px;
-                        font-size: 16px;
-                    }
-                   
-                    .step__img{
-                        height: 180px;
-                        img {
-                            object-fit: fill;
-                        }
-                    }
-
-                    .step__content {
-                        padding: 20px 5px;
-                        min-height: 10px;
-
-                        .step__title{
-                            font-size: 18px;
-                            line-height: 20px;
-                            text-align: center;
-                        }
-
-                        .step__description {
-                            font-size: 14px;
-                            line-height: 18px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .consult {
-        padding: 10px 0;
-        .consult__content {
-            .consult__title {
-                font-size: 22px;
-                line-height: 25px;
-            }
-
-            .consult__description {
-                font-size: 14px;
-                line-height: 18px;
-            }
-
             .schedule-button {
                 font-size: 14px;
                 padding: 17px 13px;
@@ -946,11 +822,63 @@ html {
         }
     }
 
+    .get-started {
+        .get-started__content {
+            flex-direction: column;
+
+            .get-started__description {
+                .get-started__subtitle {
+                    text-align: center;
+                }
+
+                .get-started__title {
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 27px;
+                    margin-top: 10px;
+                }
+
+                .get-started__text {
+                    text-align: center;
+                    font-size: 16px;
+                    margin-top: 5px;
+                }
+            }
+
+            .get-started__information {
+                text-align: center;
+                .information__title {
+                    text-align: center;
+                }
+
+                .information__item {
+                    img {
+                        max-width: 50px;
+                    }
+                    .item__text {
+                        font-size: 14px;
+                    }
+                }
+
+                .call-now {
+                    font-size: 16px;
+                    padding: 15px 50px;
+                }
+            }
+
+            .foreclosure-preview__form-consultation {
+                margin-top: 15px;
+            }
+
+            .form-consultation__button {
+                font-size: 16px;
+                padding: 21px 54px;
+            }
+        }
+    }
+
     .footer {
         padding: 30px 0;
-        
-
-        
         .social {
             order: 4;
         }

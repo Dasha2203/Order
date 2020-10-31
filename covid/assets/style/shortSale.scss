@@ -18,7 +18,6 @@ html {
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
-    position: relative;
 }
 
 .header {
@@ -123,11 +122,10 @@ html {
 }
 
 
-.preview {
+.foreclosure-preview {
     padding-top: 101px;
     height: 100vh;
-    background: url('../img/preview__bg.png') no-repeat;
-    background-position: center;
+    background: url('../img/fpreclosure__bg.png') no-repeat;
     background-size: cover;
     background-clip: content-box;
     background-origin: content-box;
@@ -135,49 +133,174 @@ html {
 
     .wrapper {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
         height: 100%;
-
     }
 
-    .preview__content {
-        max-width: 632px;
+    .foreclosure-preview__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .preview__title {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
-            color: #FFFFFF;
-            margin-bottom: 15px;
+    .foreclosure-preview__description {
+        max-width: 702px;
+    }
+
+    .foreclosure-preview__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .foreclosure-preview__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+    .foreclosure-preview__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-top: 25px;
+    }
+
+    .foreclosure-preview__form-consultation {
+        box-sizing: border-box;
+        padding: 30px 16px 30px 24px;
+        background: rgba(96, 200, 162, 0.8);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 454px;
+        width: 100%;
+    }
+
+    .form-consultation__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .block-input {
+        display: flex;
+        justify-content: space-between;
+        input {
+            flex-basis: 48%;
         }
+    }
 
-        .preview__description {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            margin-bottom: 30px;
-        }
+    .form-consultation__subtitle  {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
 
-        .schedule-button {
-            border: none;
-            background: #6CD3AE;
-            border-radius: 10px;
-            padding: 21px;
+    .form-consultation__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #E3E1E1;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-consultation__input {
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        margin-bottom: 25px;
+
+        &::placeholder {
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
-            cursor:pointer;
-            color: #fff;
-            transition: all .3s;
+            color: rgba(129, 129, 129, 0.7);
+            text-transform: capitalize;
+        }
+    }
+
+    .form__list {
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(129, 129, 129, 0.7);
+        position: relative;
+
+        
+    }
+
+    .form-consultation__button {
+        background: #76ECC1;
+        border-radius: 10px;
+        padding: 21px 138px;
+        border: none;
+        margin-top: 28px;
+        cursor:pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+
+        transition: all .3s;
 
             &:hover {
                 background: #4C957A;
             }
+
+    }
+
+    .message {
+        margin-top: 25px;
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 16px 12px 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(129, 129, 129, 0.7);
+        text-transform: capitalize;
+        resize: none;
+        &::placeholder {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(129, 129, 129, 0.7);
+            text-transform: capitalize;
         }
     }
 }
@@ -521,80 +644,12 @@ html {
                 right: 17px;
                 z-index: -1;
             }
-
         }
     }
 }
 
-@media (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) { 
 
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-
-            .step {
-                flex-basis: 45%;
-                margin-bottom: 20px;
-                &:first-child {
-                    margin-right: 30px;
-                }
-
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-
-            }
-        }
-
-        .step__content {
-            padding: 30px 10px;
-            min-height: 10px;
-
-            .step__title {
-                font-size: 18px;
-                text-align: center;
-            }
-
-            .step__description {
-                font-size: 14px;
-                text-align: center;
-            }
-        
-        }
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .how-it-works {
-        .steps-help {
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-    
-            .step {
-                flex-basis: 70%;
-                margin-bottom: 20px;
-    
-                .step__img{
-                    height: 350px;
-                    img {
-                        object-fit: fill;
-                    }
-                }
-    
-            }
-        }
-    }
-    
-}
-
-@media (min-width: 768px) and (max-width: 1439px) {
 
     .logo {
         max-width: 105px;
@@ -623,20 +678,58 @@ html {
         }
     }
 
-    .preview {
-        .preview__content {
-            .preview__title{
+    .foreclosure-preview {
+        .message {
+            margin-top: 10px;
+        }
+        .foreclosure-preview__description {
+            flex-basis: 48%;
+            .foreclosure-preview__title {
                 font-size: 30px;
                 line-height: 37px;
+                margin-top: 20px;
             }
 
-            .preview__description {
-                font-size: 16px;
+            .foreclosure-preview__text {
+                font-size: 18px;
             }
+        }
 
-            .schedule-button {
+        .foreclosure-preview__form-consultation {
+            flex-basis: 45%;
+            padding: 20px 10px 20px 15px;
+            .form-consultation__title {
+                font-size: 22px;
+            }
+        }
+
+        .block-input {
+            input {
+                width: 20%;
+            }
+        }
+
+        .form-consultation__input {
+            font-size: 16px;
+            margin-bottom: 10px;
+
+            &::placeholder {
                 font-size: 16px;
             }
+        }
+
+        .form__list {
+            font-size: 16px;
+
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+
+
+        .form-consultation__button {
+            padding: 10px 30px;
+            font-size: 16px;
         }
     }
 
@@ -644,11 +737,27 @@ html {
         .how-it-works__subtitle {
             margin-bottom: 15px;
         }
-        .step {
-            &:first-child {
-                margin-right: 0;
+
+        .steps-help {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .step {
+                flex-basis: 70%;
+                margin-bottom: 20px;
+
+                .step__img{
+                    height: 350px;
+                    img {
+                        object-fit: fill;
+                    }
+                }
+
             }
         }
+
+
 
         .step__content 
         {
@@ -811,25 +920,74 @@ html {
               }
         }
     }
-    .preview {
+
+    .foreclosure-preview {
         padding-top: 86px;
-        .preview__content {
+        
+        height: auto;
+        .foreclosure-preview__text {
+            font-size: 16px;
             text-align: center;
-            .preview__title {
-                font-size: 20px;
-                line-height: 27px;
-                text-align: center;
+        }
+        .foreclosure-preview__content {
+            flex-direction: column;
+            .foreclosure-preview__description {
+                .foreclosure-preview__title {
+                    font-size: 24px;
+                    line-height: 27px;
+                    text-align: center;
+                }
+    
+                .foreclosure-preview__subtitle {
+                    font-size: 18px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+    
+                
             }
 
-            .preview__description {
-                text-align: center;
-                font-size: 18px;
-            }
+            .foreclosure-preview__form-consultation {
+                padding: 6px 8px 10px 10px;
+                margin-bottom: 10px;
+                margin-top: 10px;
 
-            .schedule-button {
-                font-size: 18px;
-                padding: 17px 13px;
+                .form-consultation__title {
+                    font-size: 22px;
+                }
+
+                .form-consultation__subtitle {
+                    font-size: 18px;
+                }
+
+                .form-consultation__description {
+                    margin: 10px auto;
+                }
+
+                .form-consultation__input {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+                .form__list {
+                    font-size: 14px;
+                     &::placeholder {
+                         font-size: 14px;
+                     }
+                }
+
+                .block-input {
+                    flex-direction: column;
+                }
+
+                .form-consultation__button {
+                    font-size: 16px;
+                    padding: 10px 20px
+                }
             }
+            
         }
     }
 
@@ -852,6 +1010,26 @@ html {
             }
 
             
+        }
+    }
+
+    .consult {
+        padding: 10px 0;
+        .consult__content {
+            .consult__title {
+                font-size: 22px;
+                line-height: 25px;
+            }
+
+            .consult__description {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .schedule-button {
+                font-size: 14px;
+                padding: 17px 13px;
+            }
         }
     }
 
@@ -926,26 +1104,6 @@ html {
         }
     }
 
-    .consult {
-        padding: 10px 0;
-        .consult__content {
-            .consult__title {
-                font-size: 22px;
-                line-height: 25px;
-            }
-
-            .consult__description {
-                font-size: 14px;
-                line-height: 18px;
-            }
-
-            .schedule-button {
-                font-size: 14px;
-                padding: 17px 13px;
-            }
-        }
-    }
-
     .footer {
         padding: 30px 0;
         
@@ -995,9 +1153,6 @@ html {
                 }
             }
         }
-
-
-        
     }
 
     .footer .footer__menu .powered {

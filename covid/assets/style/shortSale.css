@@ -16,7 +16,6 @@ html {
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
-  position: relative;
 }
 
 .header {
@@ -113,56 +112,166 @@ html {
   cursor: pointer;
 }
 
-.preview {
+.foreclosure-preview {
   padding-top: 101px;
   height: 100vh;
-  background: url("../img/preview__bg.png") no-repeat;
-  background-position: center;
+  background: url("../img/fpreclosure__bg.png") no-repeat;
   background-size: cover;
   background-clip: content-box;
   background-origin: content-box;
   box-sizing: border-box;
 }
-.preview .wrapper {
+.foreclosure-preview .wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
-.preview .preview__content {
-  max-width: 632px;
+.foreclosure-preview .foreclosure-preview__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.preview .preview__content .preview__title {
+.foreclosure-preview .foreclosure-preview__description {
+  max-width: 702px;
+}
+.foreclosure-preview .foreclosure-preview__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.foreclosure-preview .foreclosure-preview__title {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-top: 30px;
 }
-.preview .preview__content .preview__description {
+.foreclosure-preview .foreclosure-preview__text {
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-top: 25px;
 }
-.preview .preview__content .schedule-button {
-  border: none;
-  background: #6CD3AE;
+.foreclosure-preview .foreclosure-preview__form-consultation {
+  box-sizing: border-box;
+  padding: 30px 16px 30px 24px;
+  background: rgba(96, 200, 162, 0.8);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 454px;
+  width: 100%;
+}
+.foreclosure-preview .form-consultation__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.foreclosure-preview .block-input {
+  display: flex;
+  justify-content: space-between;
+}
+.foreclosure-preview .block-input input {
+  flex-basis: 48%;
+}
+.foreclosure-preview .form-consultation__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.foreclosure-preview .form-consultation__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #E3E1E1;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.foreclosure-preview .form-consultation__input {
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
   border-radius: 10px;
-  padding: 21px;
+  border: none;
+  padding: 16px 12px 12px;
+  margin-bottom: 25px;
+}
+.foreclosure-preview .form-consultation__input::placeholder {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: rgba(129, 129, 129, 0.7);
+  text-transform: capitalize;
+}
+.foreclosure-preview .form__list {
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  padding: 16px 12px 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(129, 129, 129, 0.7);
+  position: relative;
+}
+.foreclosure-preview .form-consultation__button {
+  background: #76ECC1;
+  border-radius: 10px;
+  padding: 21px 138px;
+  border: none;
+  margin-top: 28px;
   cursor: pointer;
-  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
   transition: all 0.3s;
 }
-.preview .preview__content .schedule-button:hover {
+.foreclosure-preview .form-consultation__button:hover {
   background: #4C957A;
+}
+.foreclosure-preview .message {
+  margin-top: 25px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  padding: 16px 12px 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(129, 129, 129, 0.7);
+  text-transform: capitalize;
+  resize: none;
+}
+.foreclosure-preview .message::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(129, 129, 129, 0.7);
+  text-transform: capitalize;
 }
 
 .home-defenders {
@@ -474,55 +583,6 @@ html {
   z-index: -1;
 }
 
-@media (max-width: 1439px) {
-  .how-it-works .steps-help {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .how-it-works .steps-help .step {
-    flex-basis: 45%;
-    margin-bottom: 20px;
-  }
-  .how-it-works .steps-help .step:first-child {
-    margin-right: 30px;
-  }
-  .how-it-works .steps-help .step .step__img {
-    height: 350px;
-  }
-  .how-it-works .steps-help .step .step__img img {
-    object-fit: fill;
-  }
-  .how-it-works .step__content {
-    padding: 30px 10px;
-    min-height: 10px;
-  }
-  .how-it-works .step__content .step__title {
-    font-size: 18px;
-    text-align: center;
-  }
-  .how-it-works .step__content .step__description {
-    font-size: 14px;
-    text-align: center;
-  }
-}
-@media (max-width: 1000px) {
-  .how-it-works .steps-help {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .how-it-works .steps-help .step {
-    flex-basis: 70%;
-    margin-bottom: 20px;
-  }
-  .how-it-works .steps-help .step .step__img {
-    height: 350px;
-  }
-  .how-it-works .steps-help .step .step__img img {
-    object-fit: fill;
-  }
-}
 @media (min-width: 768px) and (max-width: 1439px) {
   .logo {
     max-width: 105px;
@@ -550,22 +610,65 @@ html {
     margin-right: 0;
   }
 
-  .preview .preview__content .preview__title {
+  .foreclosure-preview .message {
+    margin-top: 10px;
+  }
+  .foreclosure-preview .foreclosure-preview__description {
+    flex-basis: 48%;
+  }
+  .foreclosure-preview .foreclosure-preview__description .foreclosure-preview__title {
     font-size: 30px;
     line-height: 37px;
+    margin-top: 20px;
   }
-  .preview .preview__content .preview__description {
+  .foreclosure-preview .foreclosure-preview__description .foreclosure-preview__text {
+    font-size: 18px;
+  }
+  .foreclosure-preview .foreclosure-preview__form-consultation {
+    flex-basis: 45%;
+    padding: 20px 10px 20px 15px;
+  }
+  .foreclosure-preview .foreclosure-preview__form-consultation .form-consultation__title {
+    font-size: 22px;
+  }
+  .foreclosure-preview .block-input input {
+    width: 20%;
+  }
+  .foreclosure-preview .form-consultation__input {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .foreclosure-preview .form-consultation__input::placeholder {
     font-size: 16px;
   }
-  .preview .preview__content .schedule-button {
+  .foreclosure-preview .form__list {
+    font-size: 16px;
+  }
+  .foreclosure-preview .form__list::placeholder {
+    font-size: 16px;
+  }
+  .foreclosure-preview .form-consultation__button {
+    padding: 10px 30px;
     font-size: 16px;
   }
 
   .how-it-works .how-it-works__subtitle {
     margin-bottom: 15px;
   }
-  .how-it-works .step:first-child {
-    margin-right: 0;
+  .how-it-works .steps-help {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-it-works .steps-help .step {
+    flex-basis: 70%;
+    margin-bottom: 20px;
+  }
+  .how-it-works .steps-help .step .step__img {
+    height: 350px;
+  }
+  .how-it-works .steps-help .step .step__img img {
+    object-fit: fill;
   }
   .how-it-works .step__content {
     padding: 30px 10px;
@@ -705,24 +808,60 @@ html {
     right: 0;
   }
 
-  .preview {
+  .foreclosure-preview {
     padding-top: 86px;
+    height: auto;
   }
-  .preview .preview__content {
+  .foreclosure-preview .foreclosure-preview__text {
+    font-size: 16px;
     text-align: center;
   }
-  .preview .preview__content .preview__title {
-    font-size: 20px;
+  .foreclosure-preview .foreclosure-preview__content {
+    flex-direction: column;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__description .foreclosure-preview__title {
+    font-size: 24px;
     line-height: 27px;
     text-align: center;
   }
-  .preview .preview__content .preview__description {
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__description .foreclosure-preview__subtitle {
+    font-size: 18px;
     text-align: center;
+    margin-top: 10px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation {
+    padding: 6px 8px 10px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form-consultation__title {
+    font-size: 22px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form-consultation__subtitle {
     font-size: 18px;
   }
-  .preview .preview__content .schedule-button {
-    font-size: 18px;
-    padding: 17px 13px;
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form-consultation__description {
+    margin: 10px auto;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form-consultation__input {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form-consultation__input::placeholder {
+    font-size: 14px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form__list {
+    font-size: 14px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form__list::placeholder {
+    font-size: 14px;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .block-input {
+    flex-direction: column;
+  }
+  .foreclosure-preview .foreclosure-preview__content .foreclosure-preview__form-consultation .form-consultation__button {
+    font-size: 16px;
+    padding: 10px 20px;
   }
 
   .home-defenders {
@@ -738,6 +877,22 @@ html {
   }
   .home-defenders .home-defenders__content .home-defenders__description {
     font-size: 16px;
+  }
+
+  .consult {
+    padding: 10px 0;
+  }
+  .consult .consult__content .consult__title {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .consult .consult__content .consult__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .consult .consult__content .schedule-button {
+    font-size: 14px;
+    padding: 17px 13px;
   }
 
   .how-it-works {
@@ -798,22 +953,6 @@ html {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-  }
-
-  .consult {
-    padding: 10px 0;
-  }
-  .consult .consult__content .consult__title {
-    font-size: 22px;
-    line-height: 25px;
-  }
-  .consult .consult__content .consult__description {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .consult .consult__content .schedule-button {
-    font-size: 14px;
-    padding: 17px 13px;
   }
 
   .footer {
