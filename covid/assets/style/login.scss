@@ -247,9 +247,10 @@ html {
 
         form {
             display: flex;
-            align-items: flex-end;
+            align-items: flex-start;
 
             input {
+                min-width: 329px;
                 background: rgba(255, 252, 252, 0.7);
                 border: 1px solid #000000;
                 box-sizing: border-box;
@@ -659,5 +660,8 @@ html {
 
     .footer .footer__menu .powered::after {
         height: 30px;
+    }
+    .footer .footer__menu form input {
+        min-width: 10px;
     }
 }
