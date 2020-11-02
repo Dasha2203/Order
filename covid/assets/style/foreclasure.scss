@@ -246,8 +246,6 @@ $color-text: #000;
             background:url('../icon/arrow-list.svg') no-repeat;
             position: absolute;
         }
-       
-        
     }
 
     .form__list {
@@ -575,7 +573,7 @@ $color-text: #000;
 
         form {
             display: flex;
-            align-items: flex-end;
+            align-items: flex-start;
 
             input {
                 background: rgba(255, 252, 252, 0.7);
@@ -587,6 +585,7 @@ $color-text: #000;
                 font-size: 20px;
                 line-height: 24px;
                 padding: 12px 16px;
+                min-width: 329px;
                 color: rgba(88, 88, 88, 1);
                 &::placeholder {
                     font-style: normal;
@@ -1189,5 +1188,8 @@ $color-text: #000;
 
     .footer .footer__menu .powered::after {
         height: 30px;
+    }
+    .footer .footer__menu form input {
+        min-width: 10px;
     }
 }

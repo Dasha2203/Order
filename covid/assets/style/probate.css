@@ -208,7 +208,21 @@
   color: rgba(129, 129, 129, 0.7);
   text-transform: capitalize;
 }
+.foreclosure-preview .form-list-arrow {
+  position: relative;
+}
+.foreclosure-preview .form-list-arrow::after {
+  content: "";
+  display: block;
+  top: 20px;
+  right: 20px;
+  width: 21px;
+  height: 12px;
+  background: url("../icon/arrow-list.svg") no-repeat;
+  position: absolute;
+}
 .foreclosure-preview .form__list {
+  width: 100%;
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -221,6 +235,9 @@
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .foreclosure-preview .form-consultation__button {
   background: #76ECC1;
@@ -498,7 +515,7 @@
 }
 .footer .footer__menu form {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .footer .footer__menu form input {
   background: rgba(255, 252, 252, 0.7);
@@ -510,6 +527,7 @@
   font-size: 20px;
   line-height: 24px;
   padding: 12px 16px;
+  min-width: 329px;
   color: #585858;
 }
 .footer .footer__menu form input::placeholder {
@@ -999,5 +1017,9 @@
 
   .footer .footer__menu .powered::after {
     height: 30px;
+  }
+
+  .footer .footer__menu form input {
+    min-width: 10px;
   }
 }

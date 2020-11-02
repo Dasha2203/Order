@@ -299,6 +299,19 @@
   color: rgba(129, 129, 129, 0.7);
   text-transform: capitalize;
 }
+.get-started .form-list-arrow {
+  position: relative;
+}
+.get-started .form-list-arrow::after {
+  content: "";
+  display: block;
+  top: 20px;
+  right: 20px;
+  width: 21px;
+  height: 12px;
+  background: url("../icon/arrow-list.svg") no-repeat;
+  position: absolute;
+}
 .get-started .form__list {
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -311,6 +324,10 @@
   font-size: 20px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
 }
 .get-started .form-consultation__button {
   background: #76ECC1;
@@ -363,9 +380,10 @@
 }
 .footer .footer__menu form {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .footer .footer__menu form input {
+  min-width: 329px;
   background: rgba(255, 252, 252, 0.7);
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -813,5 +831,9 @@
 
   .footer .footer__menu .powered::after {
     height: 30px;
+  }
+
+  .footer .footer__menu form input {
+    min-width: 10px;
   }
 }
