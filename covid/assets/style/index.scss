@@ -63,7 +63,7 @@ html {
             position: absolute;
             width: 40px;
             right: 0;
-            height: 4px;
+            height: 2px;
             background-color: #4C957A;
             transition: 0.5s ease-in-out;
         }
@@ -382,6 +382,23 @@ html {
 .footer {
     padding: 20px 0;
 
+    .logo {
+        max-width: 134px;
+    }
+    .block-logo{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+color: #000000;
+    }
     .footer__register {
         display: flex;
         justify-content: space-between;
@@ -418,10 +435,26 @@ html {
         padding-top: 34px;
 
         form {
-            display: flex;
-            align-items: flex-start;
+            position: relative;
+            .join-title {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #000000;
+            }
+
+            & > div {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
 
             input {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 background: rgba(255, 252, 252, 0.7);
                 border: 1px solid #000000;
                 box-sizing: border-box;
@@ -429,32 +462,36 @@ html {
                 font-style: normal;
                 font-weight: 500;
                 min-width: 329px;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: 24px;
                 padding: 12px 16px;
                 color: rgba(88, 88, 88, 1);
                 &::placeholder {
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 20px;
+                    font-size: 14px;
                     line-height: 24px;
                     color: rgba(88, 88, 88, 0.7);
                 }
             }
 
             button {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 background: #6CD3AE;
                 border-radius: 10px;
                 border: none;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 48px;
+                font-size: 14px;
                 line-height: 48px;
                 color: #FFFFFF;
                 margin-left: 7px;
-                padding: 2px 10px;
+                padding: 0px 22px;
                 cursor: pointer;
-                transition: .3s;;
+                transition: .3s;
+                text-transform: uppercase;
 
                 &:hover {
                     background: #4C957A;
@@ -471,7 +508,7 @@ html {
                 margin-bottom: 15px;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: 24px;
                 color: #000000;
             }
@@ -479,7 +516,7 @@ html {
             a,p {
                 font-style: normal;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: 24px;
                 color: #000000;
             }
@@ -498,6 +535,12 @@ html {
             width: 131px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            & > a {
+                position: relative;
+                top: 50%;
+                height: 36px;
+            }
         }
 
         .powered {
@@ -528,11 +571,23 @@ html {
 }
 
 @media (max-width: 1439px) {
+    .how-it-works {
+        .steps-help {
+            .step {
+                .step__content {
+                    min-height: 360px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1239px) {
 
     .how-it-works {
         .steps-help {
             flex-wrap: wrap;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
 
             .step {
@@ -540,6 +595,10 @@ html {
                 margin-bottom: 20px;
                 &:first-child {
                     margin-right: 30px;
+                }
+
+                .step__content {
+                    min-height: 310px;
                 }
 
                 .step__img{
@@ -579,7 +638,7 @@ html {
             justify-content: center;
     
             .step {
-                flex-basis: 70%;
+                
                 margin-bottom: 20px;
     
                 .step__img{
@@ -588,6 +647,10 @@ html {
                         object-fit: fill;
                     }
                 }
+
+                .step__content{
+                    min-height: 360px;
+                }
     
             }
         }
@@ -595,7 +658,19 @@ html {
     
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (max-width: 850px){
+    .how-it-works {
+        .steps-help {
+            .step {
+                .step__content {
+                    min-height: 403px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
 
     .logo {
         max-width: 105px;
@@ -611,16 +686,15 @@ html {
 
     .header .header__content > div {
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
 
-        .button-sing-in {
-            order: 1;
+        .button-sing-in img{
+            max-width: 23px;
         }
 
         .header__navigation{
-            order: 2;
-            margin-right: 0;
+            
+            margin-right: 10px;
         }
     }
 
@@ -689,7 +763,7 @@ html {
         .footer__register{
             padding-bottom: 30px;
             .input__join {
-                font-size: 16px;
+                font-size: 14px;
                 padding: 13px;
                 &::placeholder {
                     font-size: 16px;
@@ -703,16 +777,22 @@ html {
             justify-content: space-around;
 
             .block-menu {
-                flex-basis: 22%;
+                flex-basis: 30%;
                 text-align: center;
             }
 
-            .contact-us,.social {
-                margin-top: 30px;
-            }
+            
 
             form {
+                margin-left: 0;
                 align-items: flex-start;
+                margin-top: 20px;
+            }
+
+            .social {
+                margin-right: auto;
+                margin-left: 20px;
+                margin-top: 20px;
             }
         }
     }
@@ -723,9 +803,11 @@ html {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
     .logo {
         max-width: 100px;
     }
+    
 
     .wrapper {
         max-width: 350px;
@@ -771,9 +853,9 @@ html {
 
             .button-sing-in {
                 position: absolute;
-
-                right: 55%;
-                top: 3%;
+                bottom: 24%;
+                transform: translateX(50%);
+                right: 38%;
             }
         }
 
@@ -959,9 +1041,6 @@ html {
         .footer__menu {
             flex-direction: column;
             align-items: center;
-            .logo {
-                order:1;
-            }
             .block-menu {
                 order: 3;
                 text-align: center;
@@ -981,8 +1060,20 @@ html {
                 width: 90%;
                 align-items: flex-start;
                 margin-top: 20px;
+
+                h5 {
+                    text-align: center;
+                }
+
+                & > div {
+                    text-align: center;
+                    top: 0;
+                    transform: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
                 input {
-                    width: 90%;
+                    width: 68%;
                     padding: 5px;
                     font-size: 12px;
                     &::placeholder {
@@ -996,9 +1087,6 @@ html {
                 }
             }
         }
-
-
-        
     }
 
     .footer .footer__menu .powered {
