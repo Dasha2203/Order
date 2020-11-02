@@ -612,6 +612,10 @@ html {
 
   .foreclosure-preview .message {
     margin-top: 10px;
+    font-size: 16px;
+  }
+  .foreclosure-preview .message::placeholder {
+    font-size: 16px;
   }
   .foreclosure-preview .foreclosure-preview__description {
     flex-basis: 48%;
@@ -645,6 +649,9 @@ html {
     font-size: 16px;
   }
   .foreclosure-preview .form__list::placeholder {
+    font-size: 16px;
+  }
+  .foreclosure-preview .message {
     font-size: 16px;
   }
   .foreclosure-preview .form-consultation__button {
