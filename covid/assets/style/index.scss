@@ -93,10 +93,9 @@ html {
             width: 795px;
 
             .list__link {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
-                font-weight: 500;
-                font-size: 15px;
+                font-size: 14px; 
                 line-height: 18px;
                 color: $color-text;
             }
@@ -147,8 +146,8 @@ html {
         .preview__title {
             font-style: normal;
             font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
+            font-size: 30px;
+            line-height: 34px;
             color: #FFFFFF;
             margin-bottom: 15px;
         }
@@ -156,7 +155,7 @@ html {
         .preview__description {
             font-style: normal;
             font-weight: 400;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 24px;
             color: #FFFFFF;
             margin-bottom: 30px;
@@ -169,7 +168,7 @@ html {
             padding: 21px;
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 24px;
             cursor:pointer;
             color: #fff;
@@ -186,19 +185,21 @@ html {
     padding: 50px 0;
 
     .home-defenders__subtitle {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 16px;
         line-height: 18px;
         text-align: center;
         color: #000000;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .home-defenders__title {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
+        font-weight: 500;
+        font-size: 24px;
         line-height: 37px;
         /* identical to box height */
         text-align: center;
@@ -207,9 +208,10 @@ html {
     }
 
     .home-defenders__description {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 16px;
         line-height: 24px;
         text-align: center;
         color: $color-text;
@@ -223,20 +225,22 @@ html {
     .how-it-works__subtitle {
         font-style: normal;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 18px;
         text-align: center;
         color: #000000;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
     }
 
     .how-it-works__title {
         font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
         line-height: 37px;
         color: #000000;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         text-align: center;
     }
 
@@ -250,9 +254,10 @@ html {
             position: absolute;
             top: -23px;
             left: 25px;
-            border: 5px solid #fff;
+            border: 3px solid #fff;
             font-style: normal;
-            font-weight: 500;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
             font-size: 20px;
             line-height: 24px;
             color: #FFFFFF;
@@ -266,9 +271,10 @@ html {
             position: absolute;
             top: -23px;
             left: 25px;
-            border: 5px solid #fff;
+            border: 3px solid #fff;
+            font-family: 'Nunito', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 300;
             font-size: 20px;
             line-height: 24px;
             color: #FFFFFF;
@@ -280,11 +286,12 @@ html {
         .step:last-child .step__content::after {
             content:"Step 3";
             position: absolute;
-            border: 5px solid #fff;
+            border: 3px solid #fff;
             top: -23px;
             left: 25px;
+            font-family: 'Nunito', sans-serif;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 300;
             font-size: 20px;
             line-height: 24px;
             color: #FFFFFF;
@@ -295,6 +302,7 @@ html {
     }
     .step {
         flex-basis: 30%;
+        background: #fff;
         
 
         
@@ -311,23 +319,25 @@ html {
     }
 
     .step__content {
-        background: #fff;
-        padding: 45px 30px;
-        border: 2px solid #4C957A;
+        
+        padding: 30px 30px;
         position: relative;
-        min-height: 600px;
 
         .step__title {
+            font-family: 'Roboto', sans-serif;
             font-weight: bold;
-            font-size: 25px;
-            line-height: 30px;
+            font-size: 24px;
+            line-height: 27px;
+            margin-bottom: 10px;
+            text-align: center;
             color: #000000;
         }
 
         .step__description {
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            text-align: center;
+            font-size: 15px;
             line-height: 24px;
             color: #000000;
         }
@@ -335,16 +345,18 @@ html {
 }
 
 .consult {
-    padding: 63px 0;
+    padding: 50px 0;
     background: url('../img/consult__bg.png') no-repeat;
     background-position: center;
     .consult__content {
         text-align: center;
     }
     .consult__title {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 24px;
         line-height: 37px;
         text-align: center;
         color: #FFFFFF;
@@ -352,22 +364,26 @@ html {
     }
 
     .consult__description {
+        font-family: 'Nunito', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 18px;
         line-height: 24px;
         text-align: center;
         color: #FFFFFF;
         margin-bottom: 25px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .schedule-button {
         border: none;
         background: #6CD3AE;
         border-radius: 10px;
-        padding: 21px;
+        padding: 18px;
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
         color: #fff;
         cursor: pointer;
@@ -380,11 +396,24 @@ html {
 }
 
 .footer {
-    padding: 20px 0;
+
+    padding: 100px 0 20px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background: #4C957A;
+        top: 101px;
+        left: 0;
+    }
 
     .logo {
         max-width: 134px;
     }
+
     .block-logo{
         margin-top: 18px;
         display: flex;
@@ -394,44 +423,12 @@ html {
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-        /* identical to box height */
-
-
-color: #000000;
-    }
-    .footer__register {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom:62px ;
-        border-bottom: 2px solid #4C957A;
-        .input__join {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            padding: 20px;
-            color: rgba(88, 88, 88, 0.7);
-            border: none;
-            background: rgba(196, 196, 196, 0.7);
-            border-radius: 10px;
-            width: 407px;
-
-            &::placeholder {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 24px;
-                color: rgba(88, 88, 88, 0.7);
-                
-            }
-        }
+        color: #000000;
     }
     .footer__menu {
         display: flex;
         justify-content: space-between;
         position: relative;
-        border-top: 2px solid #4C957A;
         padding-top: 34px;
 
         form {
@@ -575,7 +572,7 @@ color: #000000;
         .steps-help {
             .step {
                 .step__content {
-                    min-height: 360px;
+                  
                 }
             }
         }
@@ -598,7 +595,6 @@ color: #000000;
                 }
 
                 .step__content {
-                    min-height: 310px;
                 }
 
                 .step__img{
@@ -613,7 +609,6 @@ color: #000000;
 
         .step__content {
             padding: 30px 10px;
-            min-height: 10px;
 
             .step__title {
                 font-size: 18px;
@@ -649,7 +644,6 @@ color: #000000;
                 }
 
                 .step__content{
-                    min-height: 360px;
                 }
     
             }
@@ -663,7 +657,6 @@ color: #000000;
         .steps-help {
             .step {
                 .step__content {
-                    min-height: 403px;
                 }
             }
         }
@@ -728,7 +721,6 @@ color: #000000;
         .step__content 
         {
             padding: 30px 10px;
-            min-height: 10px;
             .step__title {
                 font-size: 18px;
                 text-align: center;
@@ -990,7 +982,6 @@ color: #000000;
 
                     .step__content {
                         padding: 20px 5px;
-                        min-height: 10px;
 
                         .step__title{
                             font-size: 18px;
@@ -1032,7 +1023,9 @@ color: #000000;
     .footer {
         padding: 30px 0;
         
-
+        &::after {
+            top: 30px;
+        }
         
         .social {
             order: 4;

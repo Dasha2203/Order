@@ -93,10 +93,9 @@ html {
             width: 795px;
 
             .list__link {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
-                font-weight: 500;
-                font-size: 15px;
+                font-size: 14px; 
                 line-height: 18px;
                 color: $color-text;
             }
@@ -151,11 +150,11 @@ html {
             box-sizing: border-box;
             border-radius: 10px;
             border:2px solid #868686;
-            font-size: 22px;
+            font-size: 16px;
             width: 100%;
             padding: 10px;
             font-family: 'Montserrat', sans-serif;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
 
         }
 
@@ -163,7 +162,7 @@ html {
             text-align: left;
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 24px;
             color: rgba(129, 129, 129, 0.7);
             font-family: 'Montserrat', sans-serif;
@@ -178,7 +177,7 @@ html {
             a {
                 font-style: normal;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 24px;
                 color: rgba(0, 0, 0, 0.7);
             }
@@ -187,13 +186,13 @@ html {
         .sing-in {
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
             background: #6CD3AE;
             border-radius: 10px;
             border: none;
-            padding: 21px 127px;
+            padding: 16px 90px;
             cursor: pointer;
             margin-bottom: 40px;
         }
@@ -202,18 +201,31 @@ html {
     .register {
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
         color: #000000;        
     }
 }
 
 .footer {
-    padding: 20px 0;
+
+    padding: 100px 0 20px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background: #4C957A;
+        top: 101px;
+        left: 0;
+    }
 
     .logo {
         max-width: 134px;
     }
+
     .block-logo{
         margin-top: 18px;
         display: flex;
@@ -223,44 +235,12 @@ html {
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-        /* identical to box height */
-
-
-color: #000000;
-    }
-    .footer__register {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom:62px ;
-        border-bottom: 2px solid #4C957A;
-        .input__join {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            padding: 20px;
-            color: rgba(88, 88, 88, 0.7);
-            border: none;
-            background: rgba(196, 196, 196, 0.7);
-            border-radius: 10px;
-            width: 407px;
-
-            &::placeholder {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 24px;
-                color: rgba(88, 88, 88, 0.7);
-                
-            }
-        }
+        color: #000000;
     }
     .footer__menu {
         display: flex;
         justify-content: space-between;
         position: relative;
-        border-top: 2px solid #4C957A;
         padding-top: 34px;
 
         form {
@@ -644,7 +624,9 @@ color: #000000;
 
     .footer {
         padding: 30px 0;
-        
+        &::after {
+            top: 30px;
+        }
 
         
         .social {

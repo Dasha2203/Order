@@ -85,10 +85,9 @@
   width: 795px;
 }
 .header .header__navigation .navigation__list .list__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   color: #000;
 }
@@ -141,15 +140,15 @@
 .foreclosure-preview .foreclosure-preview__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 30px;
+  line-height: 37px;
   color: #FFFFFF;
   margin-top: 30px;
 }
 .foreclosure-preview .foreclosure-preview__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   margin-top: 25px;
@@ -167,7 +166,7 @@
 .foreclosure-preview .form-consultation__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
@@ -176,7 +175,7 @@
 .foreclosure-preview .form-consultation__subtitle {
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
@@ -184,7 +183,7 @@
 .foreclosure-preview .form-consultation__description {
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #E3E1E1;
@@ -203,7 +202,7 @@
 .foreclosure-preview .form-consultation__input::placeholder {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   text-transform: capitalize;
@@ -231,7 +230,7 @@
   padding: 16px 12px 12px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   position: relative;
@@ -248,7 +247,7 @@
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   transition: all 0.3s;
@@ -261,9 +260,10 @@
   padding: 50px 0;
 }
 .second-block .second-block__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 37px;
   /* identical to box height */
   text-align: center;
@@ -271,9 +271,10 @@
   margin-bottom: 25px;
 }
 .second-block .second-block__description {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #000;
@@ -285,37 +286,40 @@
 .how-it-works .how-it-works__subtitle {
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .how-it-works .how-it-works__title {
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
   line-height: 37px;
   color: #000000;
   margin-bottom: 33px;
   text-align: center;
 }
 .how-it-works .process {
-  max-width: 578px;
+  max-width: 522px;
   position: relative;
 }
 .how-it-works .process .process__title {
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 27px;
   text-align: right;
   color: #000000;
 }
 .how-it-works .process .process__description {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  text-align: center;
+  font-size: 15px;
   line-height: 24px;
   text-align: right;
   color: #000000;
@@ -334,7 +338,7 @@
   background-position: top left;
   position: absolute;
   top: 0;
-  left: 49%;
+  left: 47%;
   transform: translateX(-50%);
   z-index: -10;
 }
@@ -348,13 +352,13 @@
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
   color: #FFFFFF;
   padding: 20px 35px;
   box-sizing: border-box;
   top: 0;
-  right: -15%;
+  right: -23%;
   z-index: -1;
 }
 .how-it-works .process-wrapper .process:last-child::after {
@@ -367,13 +371,13 @@
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
   color: #FFFFFF;
   padding: 20px 35px;
   box-sizing: border-box;
   top: 0;
-  right: -15%;
+  right: -23%;
   z-index: -1;
 }
 .how-it-works .process-wrapper .process:nth-child(2) {
@@ -418,13 +422,13 @@
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
   color: #FFFFFF;
   padding: 20px 32px;
   box-sizing: border-box;
   top: 0;
-  left: -14%;
+  left: -18%;
   z-index: -1;
 }
 .how-it-works .process-wrapper .process:nth-child(2) .process__text .process__title {
@@ -435,7 +439,7 @@
 }
 
 .consult {
-  padding: 63px 0;
+  padding: 50px 0;
   background: url("../img/consult__bg.png") no-repeat;
   background-position: center;
 }
@@ -443,31 +447,37 @@
   text-align: center;
 }
 .consult .consult__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
   line-height: 37px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 25px;
 }
 .consult .consult__description {
+  font-family: "Nunito", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 25px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .consult .schedule-button {
   border: none;
   background: #6CD3AE;
   border-radius: 10px;
-  padding: 21px;
+  padding: 18px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   color: #fff;
   cursor: pointer;
@@ -478,7 +488,17 @@
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 100px 0 20px;
+  position: relative;
+}
+.footer::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background: #4C957A;
+  top: 101px;
+  left: 0;
 }
 .footer .logo {
   max-width: 134px;
@@ -492,40 +512,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
-}
-.footer .footer__register {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 62px;
-  border-bottom: 2px solid #4C957A;
-}
-.footer .footer__register .input__join {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 20px;
-  color: rgba(88, 88, 88, 0.7);
-  border: none;
-  background: rgba(196, 196, 196, 0.7);
-  border-radius: 10px;
-  width: 407px;
-}
-.footer .footer__register .input__join::placeholder {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: rgba(88, 88, 88, 0.7);
 }
 .footer .footer__menu {
   display: flex;
   justify-content: space-between;
   position: relative;
-  border-top: 2px solid #4C957A;
   padding-top: 34px;
 }
 .footer .footer__menu form {
@@ -1006,6 +998,9 @@
 
   .footer {
     padding: 30px 0;
+  }
+  .footer::after {
+    top: 30px;
   }
   .footer .social {
     order: 4;

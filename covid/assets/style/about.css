@@ -85,10 +85,10 @@
   width: 795px;
 }
 .header .header__navigation .navigation__list .list__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   color: #000;
 }
@@ -123,8 +123,8 @@
 .about-preview .about-preview__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 30px;
+  line-height: 37px;
   color: #FFFFFF;
   text-align: center;
   text-transform: capitalize;
@@ -137,18 +137,20 @@
   text-align: center;
 }
 .home-defenders .home-defenders__subtitle {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .home-defenders .home-defenders__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 37px;
   /* identical to box height */
   text-align: center;
@@ -156,9 +158,10 @@
   margin-bottom: 25px;
 }
 .home-defenders .home-defenders__description {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #000;
@@ -167,10 +170,10 @@
   border: none;
   background: #6CD3AE;
   border-radius: 10px;
-  padding: 21px;
+  padding: 16px 21px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #fff;
   cursor: pointer;
@@ -193,19 +196,24 @@
   max-width: 650px;
 }
 .get-started .get-started__subtitle {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 18px;
   color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .get-started .get-started__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 37px;
   color: #000000;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 .get-started .get-started__title span {
   color: #6CD3AE;
@@ -213,18 +221,18 @@
 .get-started .get-started__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 24px;
   color: #000000;
-  margin-top: 25px;
 }
 .get-started .get-started__information {
   margin-top: 15px;
 }
 .get-started .information__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 20px;
@@ -237,19 +245,27 @@
 .get-started .information__item img {
   margin-right: 19px;
 }
+.get-started .information__item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
 .get-started .call-now {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   text-transform: capitalize;
   border: none;
-  padding: 21px 51px;
+  padding: 16px 51px;
   background: #6CD3AE;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 15px;
 }
 .get-started .call-now:hover {
   background: #4C957A;
@@ -267,7 +283,7 @@
 .get-started .form-consultation__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
@@ -276,7 +292,7 @@
 .get-started .form-consultation__subtitle {
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
@@ -284,7 +300,7 @@
 .get-started .form-consultation__description {
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #E3E1E1;
@@ -303,7 +319,7 @@
 .get-started .form-consultation__input::placeholder {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   text-transform: capitalize;
@@ -330,7 +346,7 @@
   padding: 16px 12px 12px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   -webkit-appearance: none;
@@ -346,13 +362,23 @@
   margin-top: 28px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 100px 0 20px;
+  position: relative;
+}
+.footer::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background: #4C957A;
+  top: 101px;
+  left: 0;
 }
 .footer .logo {
   max-width: 134px;
@@ -366,40 +392,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
-}
-.footer .footer__register {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 62px;
-  border-bottom: 2px solid #4C957A;
-}
-.footer .footer__register .input__join {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 20px;
-  color: rgba(88, 88, 88, 0.7);
-  border: none;
-  background: rgba(196, 196, 196, 0.7);
-  border-radius: 10px;
-  width: 407px;
-}
-.footer .footer__register .input__join::placeholder {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: rgba(88, 88, 88, 0.7);
 }
 .footer .footer__menu {
   display: flex;
   justify-content: space-between;
   position: relative;
-  border-top: 2px solid #4C957A;
   padding-top: 34px;
 }
 .footer .footer__menu form {
@@ -833,6 +831,9 @@
 
   .footer {
     padding: 30px 0;
+  }
+  .footer::after {
+    top: 30px;
   }
   .footer .social {
     order: 4;
