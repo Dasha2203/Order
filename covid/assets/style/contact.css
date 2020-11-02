@@ -863,6 +863,8 @@
     text-align: center;
     flex-basis: 100%;
     padding-left: 0;
+    margin: 0 auto;
+    max-width: 300px;
   }
   .stop-waiting .stop-waiting__content .stop-waiting__title {
     margin-top: 5px;

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityRize</title>
+    <meta property="og:image" content="assets/img/og-meta.jpg" />
+    <link rel="shortcut icon" href="assets/icon/fav.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/register.css">
 </head>
@@ -11,7 +13,7 @@
     <header class="header" id="header">
         <div class="wrapper">
             <div class="header__content">
-                <a href="#preview"> <img class="logo" src="assets/icon/logo.svg" alt="CityRize"></a>
+                <a href="index.html"> <img class="logo" src="assets/icon/logo.svg" alt="CityRize"></a>
                 
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
@@ -20,7 +22,7 @@
                 <div>
                     <nav class="header__navigation">
                         <ul class="navigation__list">
-                            <li class="list__item"><a href="#preview" class="list__link">COVID-19 RELIEF</a></li>
+                            <li class="list__item"><a href="index.html" class="list__link">COVID-19 RELIEF</a></li>
                             <li class="list__item"><a href="foreclosure.html" class="list__link">FORECLOSURE</a></li>
                             <li class="list__item"><a href="shortSale.html" class="list__link">SHORT SALE</a></li>
                             <li class="list__item"><a href="probate.html" class="list__link">PROBATE</a></li>
@@ -29,7 +31,7 @@
                             <li class="list__item"><a href="contact.html" class="list__link">CONTACT</a></li>
                         </ul>
                     </nav>
-                    <button class="button-sing-in"><img src="assets/icon/user.svg" alt="SingIn"/></button>
+                    <button class="button-sing-in" onclick="document.location='login.html'"><img src="assets/icon/user.svg" alt="SingIn"/></button>
                 </div>
             </div>
         </div>
@@ -55,21 +57,21 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__menu">
-                <a href="#preview" > <img class="logo" src="assets/icon/gray_logo.svg" alt="CityRize"></a>
+                <a href="index.html" > <img class="logo" src="assets/icon/gray_logo.svg" alt="CityRize"></a>
                 <div class="resources block-menu">
                     <h5 class="title__resources">Resources</h5>
                     <a href="#">documents</a>
-                    <a href="#">Shortsale</a>
-                    <a href="#">Probate</a>
-                    <a href="#">COVID-19 RELIEF</a>
+                    <a href="shortSale.html">Shortsale</a>
+                    <a href="probate.html">Probate</a>
+                    <a href="index.html">COVID-19 RELIEF</a>
                 </div>
 
                 <div class="legal block-menu">
                     <h5 class="title__legal">Legal</h5>
                     <a href="#">Blog</a>
-                    <a href="#">About Us</a>
+                    <a href="about.html">About Us</a>
                     <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
                 <form>
                     <input class="input__join" type="text" placeholder="subscribe to our mailing list" name="" id="">
