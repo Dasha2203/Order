@@ -60,7 +60,7 @@ $color-text: #000;
             position: absolute;
             width: 40px;
             right: 0;
-            height: 4px;
+            height: 2px;
             background-color: #4C957A;
             transition: 0.5s ease-in-out;
         }
@@ -90,10 +90,10 @@ $color-text: #000;
             width: 795px;
 
             .list__link {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 15px;
+                font-size: 14px;
                 line-height: 18px;
                 color: $color-text;
             }
@@ -133,8 +133,8 @@ $color-text: #000;
     .about-preview__title {
         font-style: normal;
         font-weight: bold;
-        font-size: 40px;
-        line-height: 49px;
+        font-size: 30px;
+        line-height: 37px;
         color: #FFFFFF;
         text-align: center;
         text-transform: capitalize;
@@ -150,19 +150,21 @@ $color-text: #000;
         text-align: center;
     }
     .home-defenders__subtitle {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 16px;
         line-height: 18px;
         text-align: center;
         color: #000000;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .home-defenders__title {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
+        font-weight: 500;
+        font-size: 24px;
         line-height: 37px;
         /* identical to box height */
         text-align: center;
@@ -171,9 +173,10 @@ $color-text: #000;
     }
 
     .home-defenders__description {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 16px;
         line-height: 24px;
         text-align: center;
         color: $color-text;
@@ -183,14 +186,19 @@ $color-text: #000;
         border: none;
         background: #6CD3AE;
         border-radius: 10px;
-        padding: 21px;
+        padding: 16px 21px;
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
         color: #fff;
         cursor: pointer;
         margin-top: 15px;
+        transition: .3s;
+
+        &:hover {
+            background: #4C957A;
+        }
     }
 
 }
@@ -209,20 +217,25 @@ $color-text: #000;
     }
 
     .get-started__subtitle {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 16px;
         line-height: 18px;
         color: #000000;
+        margin-bottom: 20px;
+        text-transform: uppercase;
     }
 
     .get-started__title {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 37px;
         color: #000000;
         margin-top: 30px;
+        margin-bottom: 15px;
 
         span {
             color: #6CD3AE;
@@ -231,11 +244,10 @@ $color-text: #000;
 
     .get-started__text {
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
-        margin-top: 25px;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            color: #000000;
     }
 
     .get-started__information {
@@ -243,9 +255,10 @@ $color-text: #000;
     }
 
     .information__title {
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
+        font-weight: 600;
+        font-size: 18px;
         line-height: 18px;
         color: #000000;
         margin-bottom: 20px;
@@ -257,20 +270,34 @@ $color-text: #000;
         img {
             margin-right: 19px;
         }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            color: #000000;
+        }
         margin-bottom: 11px;
     }
 
     .call-now {
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
         color: #FFFFFF;
         text-transform: capitalize;
         border: none;
-        padding: 21px 51px;
+        padding: 16px 51px;
         background: #6CD3AE;
         border-radius: 10px;
+        cursor: pointer;
+        transition: .3s;
+        margin-top: 15px;
+
+        &:hover {
+            background: #4C957A;
+        }
     }
 
 
@@ -288,7 +315,7 @@ $color-text: #000;
     .form-consultation__title {
         font-style: normal;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 24px;
         line-height: 30px;
         text-align: center;
         color: #FFFFFF;
@@ -298,7 +325,7 @@ $color-text: #000;
     .form-consultation__subtitle  {
         font-style: normal;
         font-weight: 500;
-        font-size: 25px;
+        font-size: 22px;
         line-height: 30px;
         text-align: center;
         color: #FFFFFF;
@@ -307,7 +334,7 @@ $color-text: #000;
     .form-consultation__description {
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 18px;
         text-align: center;
         color: #E3E1E1;
@@ -327,7 +354,7 @@ $color-text: #000;
         &::placeholder {
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 14px;
             line-height: 24px;
             color: rgba(129, 129, 129, 0.7);
             text-transform: capitalize;
@@ -358,7 +385,7 @@ $color-text: #000;
         padding: 16px 12px 12px;
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 14px;
         line-height: 24px;
         color: rgba(129, 129, 129, 0.7);
         -webkit-appearance: none;
@@ -376,7 +403,7 @@ $color-text: #000;
 
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
         color: #FFFFFF;
 
@@ -384,81 +411,99 @@ $color-text: #000;
 }
 
 .footer {
-    padding: 20px 0;
 
-    .footer__register {
+    padding: 100px 0 20px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background: #4C957A;
+        top: 101px;
+        left: 0;
+    }
+
+    .logo {
+        max-width: 134px;
+    }
+
+    .block-logo{
+        margin-top: 18px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom:62px ;
-        border-bottom: 2px solid #4C957A;
-        .input__join {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            padding: 20px;
-            color: rgba(88, 88, 88, 0.7);
-            border: none;
-            background: rgba(196, 196, 196, 0.7);
-            border-radius: 10px;
-            width: 407px;
-
-            &::placeholder {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 24px;
-                color: rgba(88, 88, 88, 0.7);
-                
-            }
-        }
+        flex-direction: column;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
     }
     .footer__menu {
         display: flex;
         justify-content: space-between;
         position: relative;
-        border-top: 2px solid #4C957A;
         padding-top: 34px;
 
         form {
-            display: flex;
-            align-items: flex-start;
+            position: relative;
+            .join-title {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #000000;
+            }
+
+            & > div {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
 
             input {
-                min-width: 329px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 background: rgba(255, 252, 252, 0.7);
                 border: 1px solid #000000;
                 box-sizing: border-box;
                 border-radius: 10px;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 20px;
+                min-width: 329px;
+                font-size: 14px;
                 line-height: 24px;
                 padding: 12px 16px;
                 color: rgba(88, 88, 88, 1);
                 &::placeholder {
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 20px;
+                    font-size: 14px;
                     line-height: 24px;
                     color: rgba(88, 88, 88, 0.7);
                 }
             }
 
             button {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 background: #6CD3AE;
                 border-radius: 10px;
                 border: none;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 48px;
+                font-size: 14px;
                 line-height: 48px;
                 color: #FFFFFF;
                 margin-left: 7px;
-                padding: 2px 10px;
+                padding: 0px 22px;
                 cursor: pointer;
-                transition: .3s;;
+                transition: .3s;
+                text-transform: uppercase;
 
                 &:hover {
                     background: #4C957A;
@@ -475,7 +520,7 @@ $color-text: #000;
                 margin-bottom: 15px;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: 24px;
                 color: #000000;
             }
@@ -483,7 +528,7 @@ $color-text: #000;
             a,p {
                 font-style: normal;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: 24px;
                 color: #000000;
             }
@@ -502,6 +547,12 @@ $color-text: #000;
             width: 131px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            & > a {
+                position: relative;
+                top: 50%;
+                height: 36px;
+            }
         }
 
         .powered {
@@ -532,10 +583,12 @@ $color-text: #000;
 }
 
 
-@media (min-width: 768px) and (max-width: 1439px) {
-
+@media (min-width: 768px) and (max-width: 1280px) {
+    .about-preview {
+        padding-top: 80px;
+    }
     .logo {
-        max-width: 105px;
+        max-width: 80px;
     }
     .header .header__navigation .navigation__list .list__link {
         font-size: 12px;
@@ -548,16 +601,15 @@ $color-text: #000;
 
     .header .header__content > div {
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
 
-        .button-sing-in {
-            order: 1;
+        .button-sing-in img{
+            max-width: 23px;
         }
 
         .header__navigation{
-            order: 2;
-            margin-right: 0;
+            
+            margin-right: 10px;
         }
     }
 
@@ -693,7 +745,7 @@ $color-text: #000;
         .footer__register{
             padding-bottom: 30px;
             .input__join {
-                font-size: 16px;
+                font-size: 14px;
                 padding: 13px;
                 &::placeholder {
                     font-size: 16px;
@@ -707,16 +759,22 @@ $color-text: #000;
             justify-content: space-around;
 
             .block-menu {
-                flex-basis: 22%;
+                flex-basis: 30%;
                 text-align: center;
             }
 
-            .contact-us,.social {
-                margin-top: 30px;
-            }
+            
 
             form {
+                margin-left: 0;
                 align-items: flex-start;
+                margin-top: 20px;
+            }
+
+            .social {
+                margin-right: auto;
+                margin-top: 20px;
+                margin-left: 20px;
             }
         }
     }
@@ -775,9 +833,9 @@ $color-text: #000;
 
             .button-sing-in {
                 position: absolute;
-
-                right: 55%;
-                top: 3%;
+                bottom: 24%;
+                transform: translateX(50%);
+                right: 38%;
             }
         }
 
@@ -899,6 +957,11 @@ $color-text: #000;
 
     .footer {
         padding: 30px 0;
+        
+        &::after {
+            top: 30px;
+        }
+        
         .social {
             order: 4;
         }
@@ -906,9 +969,6 @@ $color-text: #000;
         .footer__menu {
             flex-direction: column;
             align-items: center;
-            .logo {
-                order:1;
-            }
             .block-menu {
                 order: 3;
                 text-align: center;
@@ -928,8 +988,20 @@ $color-text: #000;
                 width: 90%;
                 align-items: flex-start;
                 margin-top: 20px;
+
+                h5 {
+                    text-align: center;
+                }
+
+                & > div {
+                    text-align: center;
+                    top: 0;
+                    transform: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
                 input {
-                    width: 90%;
+                    width: 68%;
                     padding: 5px;
                     font-size: 12px;
                     &::placeholder {
@@ -943,9 +1015,6 @@ $color-text: #000;
                 }
             }
         }
-
-
-        
     }
 
     .footer .footer__menu .powered {

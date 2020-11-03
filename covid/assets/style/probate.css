@@ -56,7 +56,7 @@
   position: absolute;
   width: 40px;
   right: 0;
-  height: 4px;
+  height: 2px;
   background-color: #4C957A;
   transition: 0.5s ease-in-out;
 }
@@ -85,10 +85,9 @@
   width: 795px;
 }
 .header .header__navigation .navigation__list .list__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   color: #000;
 }
@@ -141,15 +140,15 @@
 .foreclosure-preview .foreclosure-preview__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 30px;
+  line-height: 37px;
   color: #FFFFFF;
   margin-top: 30px;
 }
 .foreclosure-preview .foreclosure-preview__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   margin-top: 25px;
@@ -167,7 +166,7 @@
 .foreclosure-preview .form-consultation__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
@@ -176,7 +175,7 @@
 .foreclosure-preview .form-consultation__subtitle {
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
@@ -184,7 +183,7 @@
 .foreclosure-preview .form-consultation__description {
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #E3E1E1;
@@ -203,7 +202,7 @@
 .foreclosure-preview .form-consultation__input::placeholder {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   text-transform: capitalize;
@@ -231,7 +230,7 @@
   padding: 16px 12px 12px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(129, 129, 129, 0.7);
   position: relative;
@@ -248,7 +247,7 @@
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   transition: all 0.3s;
@@ -261,9 +260,10 @@
   padding: 50px 0;
 }
 .second-block .second-block__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 37px;
   /* identical to box height */
   text-align: center;
@@ -271,9 +271,10 @@
   margin-bottom: 25px;
 }
 .second-block .second-block__description {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #000;
@@ -285,37 +286,40 @@
 .how-it-works .how-it-works__subtitle {
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .how-it-works .how-it-works__title {
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
   line-height: 37px;
   color: #000000;
   margin-bottom: 33px;
   text-align: center;
 }
 .how-it-works .process {
-  max-width: 578px;
+  max-width: 522px;
   position: relative;
 }
 .how-it-works .process .process__title {
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 27px;
   text-align: right;
   color: #000000;
 }
 .how-it-works .process .process__description {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  text-align: center;
+  font-size: 15px;
   line-height: 24px;
   text-align: right;
   color: #000000;
@@ -334,7 +338,7 @@
   background-position: top left;
   position: absolute;
   top: 0;
-  left: 49%;
+  left: 47%;
   transform: translateX(-50%);
   z-index: -10;
 }
@@ -348,13 +352,13 @@
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
   color: #FFFFFF;
   padding: 20px 35px;
   box-sizing: border-box;
   top: 0;
-  right: -15%;
+  right: -23%;
   z-index: -1;
 }
 .how-it-works .process-wrapper .process:last-child::after {
@@ -367,13 +371,13 @@
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
   color: #FFFFFF;
   padding: 20px 35px;
   box-sizing: border-box;
   top: 0;
-  right: -15%;
+  right: -23%;
   z-index: -1;
 }
 .how-it-works .process-wrapper .process:nth-child(2) {
@@ -418,13 +422,13 @@
   position: absolute;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 43px;
   color: #FFFFFF;
   padding: 20px 32px;
   box-sizing: border-box;
   top: 0;
-  left: -14%;
+  left: -18%;
   z-index: -1;
 }
 .how-it-works .process-wrapper .process:nth-child(2) .process__text .process__title {
@@ -435,7 +439,7 @@
 }
 
 .consult {
-  padding: 63px 0;
+  padding: 50px 0;
   background: url("../img/consult__bg.png") no-repeat;
   background-position: center;
 }
@@ -443,31 +447,37 @@
   text-align: center;
 }
 .consult .consult__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
   line-height: 37px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 25px;
 }
 .consult .consult__description {
+  font-family: "Nunito", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 25px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .consult .schedule-button {
   border: none;
   background: #6CD3AE;
   border-radius: 10px;
-  padding: 21px;
+  padding: 18px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   color: #fff;
   cursor: pointer;
@@ -478,78 +488,93 @@
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 100px 0 20px;
+  position: relative;
 }
-.footer .footer__register {
+.footer::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background: #4C957A;
+  top: 101px;
+  left: 0;
+}
+.footer .logo {
+  max-width: 134px;
+}
+.footer .block-logo {
+  margin-top: 18px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 62px;
-  border-bottom: 2px solid #4C957A;
-}
-.footer .footer__register .input__join {
+  flex-direction: column;
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 20px;
-  color: rgba(88, 88, 88, 0.7);
-  border: none;
-  background: rgba(196, 196, 196, 0.7);
-  border-radius: 10px;
-  width: 407px;
-}
-.footer .footer__register .input__join::placeholder {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: rgba(88, 88, 88, 0.7);
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 .footer .footer__menu {
   display: flex;
   justify-content: space-between;
   position: relative;
-  border-top: 2px solid #4C957A;
   padding-top: 34px;
 }
 .footer .footer__menu form {
-  display: flex;
-  align-items: flex-start;
+  position: relative;
+}
+.footer .footer__menu form .join-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.footer .footer__menu form > div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .footer .footer__menu form input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: rgba(255, 252, 252, 0.7);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  min-width: 329px;
+  font-size: 14px;
   line-height: 24px;
   padding: 12px 16px;
-  min-width: 329px;
   color: #585858;
 }
 .footer .footer__menu form input::placeholder {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(88, 88, 88, 0.7);
 }
 .footer .footer__menu form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: #6CD3AE;
   border-radius: 10px;
   border: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 14px;
   line-height: 48px;
   color: #FFFFFF;
   margin-left: 7px;
-  padding: 2px 10px;
+  padding: 0px 22px;
   cursor: pointer;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 .footer .footer__menu form button:hover {
   background: #4C957A;
@@ -562,14 +587,14 @@
   margin-bottom: 15px;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: #000000;
 }
 .footer .footer__menu .block-menu a, .footer .footer__menu .block-menu p {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: #000000;
 }
@@ -584,6 +609,12 @@
   width: 131px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.footer .footer__menu .social > a {
+  position: relative;
+  top: 50%;
+  height: 36px;
 }
 .footer .footer__menu .powered {
   color: #000;
@@ -608,7 +639,7 @@
   z-index: -1;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .logo {
     max-width: 105px;
   }
@@ -624,15 +655,13 @@
 
   .header .header__content > div {
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
   }
-  .header .header__content > div .button-sing-in {
-    order: 1;
+  .header .header__content > div .button-sing-in img {
+    max-width: 23px;
   }
   .header .header__content > div .header__navigation {
-    order: 2;
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .foreclosure-preview .foreclosure-preview__description {
@@ -746,7 +775,7 @@
     padding-bottom: 30px;
   }
   .footer .footer__register .input__join {
-    font-size: 16px;
+    font-size: 14px;
     padding: 13px;
     width: 310px;
   }
@@ -758,14 +787,18 @@
     justify-content: space-around;
   }
   .footer .footer__menu .block-menu {
-    flex-basis: 22%;
+    flex-basis: 30%;
     text-align: center;
   }
-  .footer .footer__menu .contact-us, .footer .footer__menu .social {
-    margin-top: 30px;
-  }
   .footer .footer__menu form {
+    margin-left: 0;
     align-items: flex-start;
+    margin-top: 20px;
+  }
+  .footer .footer__menu .social {
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 
   .footer .footer__menu .powered::after {
@@ -816,8 +849,9 @@
   }
   .header .header__content > div .button-sing-in {
     position: absolute;
-    right: 55%;
-    top: 3%;
+    bottom: 24%;
+    transform: translateX(50%);
+    right: 38%;
   }
   .header .header__content .menu__btn {
     display: block;
@@ -965,15 +999,15 @@
   .footer {
     padding: 30px 0;
   }
+  .footer::after {
+    top: 30px;
+  }
   .footer .social {
     order: 4;
   }
   .footer .footer__menu {
     flex-direction: column;
     align-items: center;
-  }
-  .footer .footer__menu .logo {
-    order: 1;
   }
   .footer .footer__menu .block-menu {
     order: 3;
@@ -992,8 +1026,18 @@
     align-items: flex-start;
     margin-top: 20px;
   }
+  .footer .footer__menu form h5 {
+    text-align: center;
+  }
+  .footer .footer__menu form > div {
+    text-align: center;
+    top: 0;
+    transform: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .footer .footer__menu form input {
-    width: 90%;
+    width: 68%;
     padding: 5px;
     font-size: 12px;
   }
