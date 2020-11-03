@@ -129,13 +129,22 @@ html {
 
     .register__title{
         font-style: normal;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 30px;
         line-height: 37px;
         color: #000000;
-        text-align: center;
-        margin-bottom: 40px;
+    }
 
+    .login {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 5px;
+        span {
+            text-decoration: underline;
+        }
     }
 
     .register__form {
@@ -160,13 +169,12 @@ html {
 
         p {
             text-align: left;
+            margin-left: 10px;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 15px;
+            line-height: 18px;
             color: rgba(129, 129, 129, 0.7);
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 15px;
 
         }
         div {
@@ -186,7 +194,7 @@ html {
         .sing-in {
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 24px;
             color: #FFFFFF;
             background: #6CD3AE;
@@ -416,12 +424,12 @@ html {
             max-width: 380px;
 
             input {
-                font-size: 18px;
+                font-size: 14px;
     
             }
     
             p {
-                font-size: 18px;
+                font-size: 15px;
     
             }
             div {
@@ -430,19 +438,19 @@ html {
                 width: 100%;
     
                 a {
-                    font-size: 18px;
+                    font-size: 14px;
                 }
             }
     
             .sing-in {
-                font-size: 18px;
+                font-size: 14px;
                 cursor: pointer;
                 margin-bottom: 30px;
             }
         }
 
         .register {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 
@@ -590,12 +598,12 @@ html {
             max-width: 280px;
 
             input {
-                font-size: 16px;
+                font-size: 14px;
     
             }
     
             p {
-                font-size: 16px;
+                font-size: 14px;
     
             }
             div {
@@ -604,12 +612,12 @@ html {
                 width: 100%;
     
                 a {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
     
             .sing-in {
-                font-size: 18px;
+                font-size: 14px;
                 cursor: pointer;
                 margin-bottom: 30px;
                 padding: 10px 98px;
@@ -618,7 +626,7 @@ html {
         }
 
         .register {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 

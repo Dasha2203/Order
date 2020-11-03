@@ -122,27 +122,86 @@ html {
 }
 
 .login {
-    padding-top: 101px;
+    padding-top: 150px;
     padding-bottom: 30px;
     text-align: center;
 
     .login__title{
         font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 30px;
         line-height: 37px;
         color: #000000;
-        text-align: center;
-        margin-bottom: 40px;
 
     }
 
     .login__form {
         margin: 0 auto;
-        text-align: center;
         max-width: 420px;
+        & >span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: capitalize;
+            color: rgba(129, 129, 129, 0.7);
+        }
+        .password {
+            position: relative;
+            margin-bottom: 20px;
+        }
 
-        input {
+        .eye {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            width: 29px;
+            height: 29px;
+            cursor: pointer;
+        }
+
+        .remember {
+            display: none;
+        }
+
+        .remember-label {
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 15px;
+            color: rgba(4, 4, 4, 0.7);
+            text-transform: capitalize;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .remember-label::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #6CD3AE;
+            box-sizing: border-box;
+            border-radius: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+
+        .lost-password {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 15px;
+            text-decoration-line: underline;
+            text-transform: capitalize;
+
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        & > input{
 
             background: #FFFFFF;
             border: 2px solid #868686;
@@ -153,19 +212,30 @@ html {
             width: 100%;
             padding: 10px;
             font-family: 'Montserrat', sans-serif;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
 
+        }
+
+        .password input {
+            background: #FFFFFF;
+            border: 2px solid #868686;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border:2px solid #868686;
+            font-size: 18px;
+            width: 100%;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         p {
             text-align: left;
+            margin-left: 10px;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 15px;
+            line-height: 18px;
             color: rgba(129, 129, 129, 0.7);
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 15px;
 
         }
         div {
@@ -177,7 +247,7 @@ html {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 16px;
                 color: rgba(0, 0, 0, 0.7);
             }
         }
@@ -185,7 +255,7 @@ html {
         .sing-in {
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 24px;
             color: #FFFFFF;
             background: #6CD3AE;
@@ -193,16 +263,51 @@ html {
             border: none;
             padding: 21px 127px;
             cursor: pointer;
-            margin-bottom: 40px;
+            margin-top: 27px;
+            margin-bottom: 13px;
+        }
+
+        .sing-google {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            background: #fff;
+            color: #6CD3AE;
+            padding: 14px 98px;
+            border: 2px solid #6CD3AE;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-top: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                background: #6CD3AE;
+                color: #fff;
+            }
+            img {
+                margin-right: 15px;
+            }
         }
     }
 
     .register {
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #000000;        
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 5px;
+        span {
+            text-decoration: underline;
+        }
+       
     }
 }
 
@@ -586,6 +691,15 @@ html {
 
         .login__form {
             max-width: 280px;
+            margin-top: 15px;
+
+            .remember-label {
+                font-size: 12px;
+            }
+
+            .lost-password {
+                font-size: 12px;
+            }
 
             input {
                 font-size: 16px;
@@ -607,16 +721,21 @@ html {
             }
     
             .sing-in {
-                font-size: 18px;
+                font-size: 15px;
                 cursor: pointer;
                 margin-bottom: 30px;
                 padding: 10px 98px;
                 width: 100%;
+                margin-bottom: 8px;
+            }
+
+            .sing-google {
+                padding: 10px 84px;
             }
         }
 
         .register {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 

@@ -119,12 +119,21 @@ html {
 }
 .register .register__title {
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 30px;
   line-height: 37px;
   color: #000000;
-  text-align: center;
-  margin-bottom: 40px;
+}
+.register .login {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  margin-top: 5px;
+}
+.register .login span {
+  text-decoration: underline;
 }
 .register .register__form {
   margin: 0 auto;
@@ -145,13 +154,12 @@ html {
 }
 .register .register__form p {
   text-align: left;
+  margin-left: 10px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 18px;
   color: rgba(129, 129, 129, 0.7);
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 15px;
 }
 .register .register__form div {
   display: flex;
@@ -168,7 +176,7 @@ html {
 .register .register__form .sing-in {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   color: #FFFFFF;
   background: #6CD3AE;
@@ -370,10 +378,10 @@ html {
     max-width: 380px;
   }
   .register .register__form input {
-    font-size: 18px;
+    font-size: 14px;
   }
   .register .register__form p {
-    font-size: 18px;
+    font-size: 15px;
   }
   .register .register__form div {
     display: flex;
@@ -381,15 +389,15 @@ html {
     width: 100%;
   }
   .register .register__form div a {
-    font-size: 18px;
+    font-size: 14px;
   }
   .register .register__form .sing-in {
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
     margin-bottom: 30px;
   }
   .register .register {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .footer {
@@ -515,10 +523,10 @@ html {
     max-width: 280px;
   }
   .register .register__form input {
-    font-size: 16px;
+    font-size: 14px;
   }
   .register .register__form p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .register .register__form div {
     display: flex;
@@ -526,17 +534,17 @@ html {
     width: 100%;
   }
   .register .register__form div a {
-    font-size: 16px;
+    font-size: 14px;
   }
   .register .register__form .sing-in {
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
     margin-bottom: 30px;
     padding: 10px 98px;
     width: 100%;
   }
   .register .register {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .footer {
